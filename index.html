@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="가볍게 즐기는 뷰티 매거진 구독 서비스입니다.">
+    <meta name="keywords" content="뷰티, 트렌드, 매거진, 구독">
+    <meta name="author" content="myojo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA Muse</title>
+    <!-- 구글 아이콘 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="aside inner">
+        <aside class="chat">
+            <span class="material-symbols-outlined">
+                chat_bubble
+            </span>
+        </aside>
+        <aside class="up">
+            <a href="#"><span class="material-symbols-outlined">
+                    arrow_upward
+                </span></a>
+        </aside>
+    </div><!-- //.aside -->
+    <div class="fix">
+        <img src="img/side_bg.png" alt="la muse">
+        <div class="search">
+            <input type="text" placeholder="제목, 내용을 입력해주세요">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </a>
+        </div><!-- //.search -->
+        <div class="gnb">
+            <ul>
+                <li><a href="#">스킨케어</a>
+                    <ul class="sub">
+                        <li><a href="#">건성</a></li>
+                        <li><a href="#">지성</a></li>
+                        <li><a href="#">복합성</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="#">메이크업</a>
+                    <ul class="sub">
+                        <li><a href="#">봄웜</a></li>
+                        <li><a href="#">여름쿨</a></li>
+                        <li><a href="#">가을웜</a></li>
+                        <li><a href="#">겨울쿨</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="#">비디오</a>
+                </li>
+                <li><a href="#">스토어</a>
+                </li>
+                <li><a href="#">마이페이지</a>
+                </li>
+            </ul>
+        </div><!-- //.gnb -->
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="img/sns1.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="img/sns2.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="img/sns3.png" alt="facebook"></a></li>
+            </ul>
+        </div><!-- //.sns -->
+    </div><!-- //.fix -->
+    <nav>
+        <div class="inner">
+            <div class="nav_top">
+                <div class="nav_left">
+                    <!-- 로그인시 반갑습니다 쓰일 자리 -->
+                </div><!-- //.nav_left -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="#" class="login">
+                        <p>LOG IN</p>
+                        <span class="material-symbols-outlined">
+                            login
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div><!-- //.nav_top -->
+            <div class="nav_middle">
+                <div class="logo">
+                    <h1><a href="#"><img src="img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="#" class="login">
+                        <p>LOG IN</p>
+                        <span class="material-symbols-outlined">
+                            login
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div>
+            <div class="nav_bottom">
+                <div class="logo">
+                    <h1><a href="#"><img src="img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <ul class="gnb">
+                    <li><a href="#">스킨케어</a>
+                        <ul class="sub">
+                            <li><a href="#">건성</a></li>
+                            <li><a href="#">지성</a></li>
+                            <li><a href="#">복합성</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="#">메이크업</a>
+                        <ul class="sub">
+                            <li><a href="#">봄웜</a></li>
+                            <li><a href="#">여름쿨</a></li>
+                            <li><a href="#">가을웜</a></li>
+                            <li><a href="#">겨울쿨</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="#">비디오</a>
+                    </li>
+                    <li><a href="#">스토어</a>
+                    </li>
+                    <li><a href="#">마이페이지</a></li>
+                </ul><!-- //.gnb -->
+                <div class="nv_right">
+                    <div class="search">
+                        <input type="text" placeholder="제목, 내용을 입력해주세요">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
+                    </div><!-- //.search -->
+                    <div class="ham">
+                        <span class="material-symbols-outlined menu">
+                            menu
+                        </span>
+                        <span class="material-symbols-outlined x">
+                            close
+                        </span>
+                    </div><!-- //.ham -->
+                </div><!-- //.nv_right -->
+            </div><!-- //.nav_bottom -->
+        </div><!-- //.inner -->
+    </nav>
+    <div class="swiper main_visual">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide one">
+                <a href="#">
+                    <p>2025 Spring Makeup</p>
+                    <div>
+                        <span>110만 </span>인플루언서 하윤의 봄 메이크업
+                    </div>
+                </a>
+            </li>
+            <li class="swiper-slide two">
+                <a href="#">
+                    <p>Glow Makeup</p>
+                    <div>
+                        나연이 사랑한 촉촉한 <span>광채</span> 메이크업
+                    </div>
+                </a>
+            </li>
+            <li class="swiper-slide three">
+                <a href="#">
+                    <p>Smokey Makeup</p>
+                    <div>
+                        써니의 <span>스모키 </span>메이크업
+                    </div>
+                </a>
+            </li>
+            <li class="swiper-slide four">
+                <a href="#">
+                    <p>2025 Spring Makeup</p>
+                    <div>
+                        <span>110만 </span>인플루언서 하윤의 봄 메이크업
+                    </div>
+                </a>
+            </li>
+            <li class="swiper-slide five">
+                <a href="#">
+                    <p>Glow Makeup</p>
+                    <div>
+                        나연이 사랑한 촉촉한 <span>광채</span> 메이크업
+                    </div>
+                </a>
+            </li>
+            <li class="swiper-slide six">
+                <a href="#">
+                    <p>Smokey Makeup</p>
+                    <div>
+                        써니의 <span>스모키 </span>메이크업
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="main-pagination"></div>
+    </div><!-- //.main_visual -->
+
+    <div class="skincare inner">
+        <div class="skincare_left">
+            <a href="#">
+                <div class="img">
+                    <img src="img/skincare_main.png" alt="스킨케어">
+                </div><!-- //.img -->
+                <div>La MUSE &nbsp;5월호</div>
+            </a>
+        </div>
+        <div class="swiper mon_skincare">
+            <div class="h3_text">
+                <a href="#">
+                    <h3>Skin Care</h3>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                </a>
+            </div><!-- //.h3_text -->
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="img/skincare1.png" alt="과월호1">
+                        <div>월간 N월호</div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="img/skincare2.png" alt="과월호2">
+                        <div>월간 N월호</div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="img/skincare3.png" alt="과월호3">
+                        <div>월간 N월호</div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="img/skincare1.png" alt="과월호4">
+                        <div>월간 N월호</div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="img/skincare2.png" alt="과월호5">
+                        <div>월간 N월호</div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="img/skincare3.png" alt="과월호6">
+                        <div>월간 N월호</div>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- //.mon_skincare -->
+    </div><!-- //.skincare -->
+
+    <div class="makeup inner">
+        <div class="h3_text">
+            <a href="#">
+                <h3>Make Up</h3>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.h3_text -->
+        <div class="makeup_content">
+            <div class="makeup_left">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/makeup_main.png" alt="모카무스메이크업"></li>
+                        <li class="tag tag_big">가을웜</li>
+                        <li>인간 모카무스가 되어보자!</li>
+                        <li class="by">by 류정</li>
+                    </ul>
+                </a>
+            </div><!-- //.makeup_left -->
+            <div class="makeup_right">
+                <div class="makeupsmall">
+                    <a href="#">
+                        <ul>
+                            <li><img src="img/makeup1.png" alt="커버메이크업"></li>
+                            <li class="tag">가을웜</li>
+                            <li>장원영 커버 메이크업</li>
+                            <li class="by">by HANA</li>
+                        </ul>
+                    </a>
+                </div><!-- //.makeupsmall -->
+                <div class="makeupsmall">
+                    <a href="#">
+                        <ul>
+                            <li><img src="img/makeup2.png" alt="나들이메이크업"></li>
+                            <li class="tag">봄웜</li>
+                            <li>봄메이크업하고 나들이</li>
+                            <li class="by">by 유미</li>
+                        </ul>
+                    </a>
+                </div><!-- //.makeupsmall -->
+                <div class="makeupsmall">
+                    <a href="#">
+                        <ul>
+                            <li><img src="img/makeup3.png" alt="증사메이크업"></li>
+                            <li class="tag">여름쿨</li>
+                            <li>여쿨 증명사진 메이크업</li>
+                            <li class="by">by 지나</li>
+                        </ul>
+                    </a>
+                </div><!-- //.makeupsmall -->
+                <div class="makeupsmall">
+                    <a href="#">
+                        <ul>
+                            <li><img src="img/makeup4.png" alt="립메이크업"></li>
+                            <li class="tag">겨울쿨</li>
+                            <li>겨쿨 착붙립 튜토리얼</li>
+                            <li class="by">by 김크리스탈</li>
+                        </ul>
+                    </a>
+                </div><!-- //.makeupsmall -->
+            </div><!-- //.makeup_right -->
+        </div><!-- //.makeup_content -->
+
+    </div><!-- //.makeup -->
+
+    <div class="video inner">
+        <div class="h3_text">
+            <a href="#">
+                <h3>Video</h3>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.h3_text -->
+        <div class="vid_contents">
+            <div class="vidboth">
+                <div class="vid vid_one">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            play_circle
+                        </span>
+                        <ul>
+                            <li><span>수빈</span></li>
+                            <li>나이트케어 루틴</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="vid vid_two">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            play_circle
+                        </span>
+                        <ul>
+                            <li><span>유미</span></li>
+                            <li>데이트 메이크업 같이해요!</li>
+                        </ul>
+                    </a>
+                </div>
+            </div><!-- //.vid_left -->
+            <div class="vidboth">
+                <div class="vid vid_three">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            play_circle
+                        </span>
+                        <ul>
+                            <li><span>지나</span></li>
+                            <li>여의도 나들이하며 메이크업해요</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="vid vid_four">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            play_circle
+                        </span>
+                        <ul>
+                            <li><span>류정</span></li>
+                            <li>해외는 처음이라...</li>
+                        </ul>
+                    </a>
+                </div>
+            </div><!-- //.vid_right -->
+        </div><!-- //.vid_contents -->
+    </div><!-- //.video -->
+
+    <div class="interaction">
+        <div class="txtAniBox">
+            <ul class="txtAni">
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+                <li>INTERACTION</li>
+            </ul>
+        </div><!-- //.txtAniBox -->
+    </div><!-- //.interaction -->
+
+    <div class="store">
+        <div class="h3_text">
+            <a href="#">
+                <h3>Store</h3>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.h3_text -->
+        <div class="store_slide">
+            <div class="swiper store_top">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                </ul>
+            </div><!-- //.store_top -->
+            <div class="swiper store_bottom">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="img/store.png" alt="store"></a></li>
+                </ul>
+            </div><!-- //.store_bottom -->
+        </div><!-- //.store_slide -->
+    </div><!-- //.store -->
+
+    <footer>
+        <div class="f_contents inner">
+            <div class="top">
+                <ul>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">광고·제휴 문의</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                </ul>
+            </div><!-- //.top -->
+            <div class="f_middle">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/footer_logo.png" alt="LaMUSE">
+                    </a>
+                </div><!-- //.logo -->
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="img/sns1.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="img/sns2.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="img/sns3.png" alt="facebook"></a></li>
+                    </ul>
+                </div><!-- //.sns -->
+            </div><!-- //.f_middle -->
+            <div class="copy">
+                © 2025 LaMUSE. All Rights Reserved.
+            </div><!-- //.copy -->
+        </div><!-- //.f_contents -->
+    </footer>
+</body>
+
+</html>

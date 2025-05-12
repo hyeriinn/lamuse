@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+/* main_visual */
+.main_visual {
+    width: 100%;
+    position: relative;
+}
+
+/* .main-pagination {
+    position: absolute;
+    z-index: 10;
+} */
+/* 위치 나중에 다시 잡아보기 */
+
+.main_visual .swiper-slide {
+    width: 100%;
+    height: 909px;
+    /* background: yellow; */
+}
+
+.main_visual .swiper-slide a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.main_visual .swiper-slide a p {
+    position: absolute;
+    left: 67px;
+    top: 75%;
+    font-style: italic;
+    font-size: 80px;
+    font-family: var(--DM);
+}
+
+.main_visual .swiper-slide a div {
+    position: absolute;
+    left: 67px;
+    top: 85%;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.main_visual .swiper-slide a div span {
+    font-weight: 600;
+}
+
+.main_visual li.one {
+    background: url(../img/main1.png) no-repeat center center;
+    background-size: cover; 
+}
+
+.main_visual li.two {
+    background: url(../img/main2.png)no-repeat center center;
+    background-size: cover; 
+}
+
+.main_visual li.three {
+    background: url(../img/main3.png)no-repeat center center;
+    background-size: cover; 
+}
+
+.main_visual li.four {
+    background: url(../img/main1.png)no-repeat center center;
+    background-size: cover; 
+}
+
+.main_visual li.five {
+    background: url(../img/main2.png)no-repeat center center;
+    background-size: cover; 
+}
+
+.main_visual li.six {
+    background: url(../img/main3.png)no-repeat center center;
+    background-size: cover; 
+}
+
+/* skincare */
+.skincare {
+    padding: 180px 0;
+    display: flex;
+    /* background: greenyellow; */
+    gap: 36px;
+    align-items: flex-end;/* 끝정렬 */
+    font-family: var(--Eulyoo);
+}
+
+
+.skincare img {
+    border-radius: 10px;
+}
+
+.skincare_left {
+    width: 629px;
+    height: 990px;/* 임시임 */
+    /* background: rgb(188, 188, 188); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 35px;
+    /* 임시임 */
+}
+
+.skincare_left a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ccc;
+    justify-content: space-between;
+}
+
+.skincare_left img {
+    height: 807px;
+}
+
+.skincare .swiper {
+    width: 1027px;
+    height: 889px;
+    /* 부모의 고정 너비 */
+    /* background: green; */
+    overflow: hidden;
+    /* 스크롤 안 보이게 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skincare .swiper .h3_text {
+    width: 50%;
+    height: 100px;
+    /* 또는 flex: 0 0 auto; */
+    /* background: rgb(255, 106, 106); */
+    padding-top: 30%;
+}
+
+.skincare .swiper-wrapper {
+    display: flex;
+    /* 슬라이드 가로 정렬 */
+    height: 475px;
+    align-items: flex-end;
+
+}
+
+.skincare .swiper-slide {
+    width: 325px;
+    /* 슬라이드 고정 너비 */
+    flex-shrink: 0;
+    /* 줄어들지 않게 */
+    height: 475px;
+    /* background: #d5d5d5; */
+    font-size: 24px;
+
+}
+
+.skincare .swiper-slide a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: .8;
+    transition: .3s;
+}
+
+.skincare .swiper-slide a img {
+    width: 325px;
+}
+
+.skincare .swiper-slide:hover a {
+    opacity: 1;
+}
+
+/* makeup */
+.makeup {
+    padding: 180px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 133px;
+    align-items: center;
+    /* background: green; */
+}
+
+.makeup .makeup_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.makeup img {
+    border-radius: 10px;
+}
+
+.makeup_content div a ul {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.makeup_content a ul li:nth-child(3){
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.makeup_content a ul li:nth-child(4){
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.makeup_left a ul li:nth-child(3) {
+    font-size: 40px;
+}
+
+.makeup_left a ul li:nth-child(4) {
+    font-size: 25px;
+}
+
+.makeup_left {
+    width: 600px;
+    height: 766px;/* 있어야 sticky가 먹네 */
+    position: sticky;
+    top: 0;
+}
+
+.makeup_left a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.makeup_right {
+    width: 58%;
+    /* background: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 60px;
+}
+
+.makeupsmall img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* video */
+.video {
+    padding: 180px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 133px;
+    align-items: center;
+    /* 가운데로 정렬~ */
+}
+
+.vid_contents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.vid_contents .vidboth {
+    width: calc(50% - 36px);
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.vid_contents .vid {
+    height: 491px;
+    border-radius: 10px;
+}
+
+.vid_contents .vid.vid_one {
+    background: url(../img/video1.png)no-repeat center center;
+    background-size: cover; 
+}
+
+.vid_contents .vid.vid_two {
+    background: url(../img/video2.png)no-repeat center center;
+    background-size: cover; 
+}
+
+.vid_contents .vid.vid_three {
+    background: url(../img/video3.png)no-repeat center center;
+    background-size: cover; 
+}
+
+.vid_contents .vid.vid_four {
+    background: url(../img/video4.png)no-repeat center center;
+    background-size: cover; 
+}
+
+.vid a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.vid a>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.3s;
+    color: var(--main-red);
+}
+
+
+.vid a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.vid a ul {
+    width: 80%;
+    height: 25%;
+    border-top: 2px solid var(--w-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 35px;
+    gap: 18px;
+    transition: .3s;
+    opacity: 1;
+}
+
+.vid a ul li:first-child {
+    width: 23%;
+}
+
+.vid a:hover>span {
+    opacity: 1;
+}
+
+.vid a:hover:after {
+    opacity: 1;
+}
+
+.vid a:hover ul{
+    opacity: 0;
+}
+
+.vid a ul li {
+    padding-right: 18px;
+    border-right: 2px solid var(--w-color);
+}
+
+.vid a ul li:last-child {
+    border-right:0
+}
+
+.vid a ul span {
+    font-weight: 600;
+}
+
+/* store */
+.store {
+    width: 100%;
+    padding: 180px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 133px;
+    overflow: hidden;
+}
+
+.store_slide {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    overflow: hidden;
+}
+
+.store_slide .swiper {
+    width: 100%;
+    max-width: 2055px;
+    height: 292px;
+    /* 부모의 고정 너비 */
+    /* background: green; */
+}
+
+.store_slide .swiper-wrapper {
+    display: flex;
+    /* 슬라이드 가로 정렬 */
+    height: 292px;
+    align-items: flex-end;
+}
+
+/* interaction */
+.simply-scroll {
+    width: 100%;
+}
+
+.simply-scroll .simply-scroll-clip {
+    overflow: hidden;
+}
+
+.simply-scroll .simply-scroll-list {
+    display: flex;
+}
+
+.interaction {
+    width: 100%;
+    height: 91px;
+    color: var(--w-color);
+}
+
+.interaction .txtAniBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.interaction .txtAniBox .simply-scroll-container {
+    display: flex;
+    width: 100%;
+}
+
+.interaction .txtAniBox .simply-scroll .simply-scroll-clip {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.interaction .txtAniBox .txtAni {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transform-origin: left top;
+    background: var(--main-font);
+    height: 91px;
+}
+
+.interaction .txtAniBox .txtAni li {
+    margin-right: 30px;
+    font-size: 36px;
+}

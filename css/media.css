@@ -1,0 +1,266 @@
+@media screen and (max-width: 1024px) {
+    .nav_top {
+        display: none;
+    }
+
+    .nav_middle {
+        width: 100%;
+        padding-top: 20px;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .nav_middle .nav_right {
+        display: flex;
+    }
+
+    .nav_bottom {
+        justify-content: flex-end;
+    }
+
+    .fix {
+        opacity: 1;
+    }
+
+    .nv_right .ham {
+        display: block;
+        /* 또는 flex, inline-block 등 필요한 스타일 */
+    }
+
+    .nav_bottom ul.gnb {
+        display: none;
+    }
+
+    .search {
+        width: 300px;
+        height: 50px;
+    }
+
+    .search input {
+        font-size: 18px;
+    }
+
+    .fix .search {
+        display: none;
+    }
+
+    .main_visual .swiper-slide {
+        height: 500px;
+    }
+
+    .main_visual .swiper-slide a p {
+        font-size: 45px;
+    }
+
+    .main_visual .swiper-slide a div {
+        font-size: 40px;
+    }
+
+    .skincare {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        gap: 40px;
+    }
+
+    .skincare .swiper {
+        align-items: center;
+    }
+
+    .skincare .swiper .h3_text {
+        padding-top: 20%;
+    }
+
+    .skincare_left {
+        display: none;
+    }
+
+    .makeup_left {
+        padding-left: 20px;
+    }
+
+    .makeup_left img {
+        height: 500px;
+    }
+
+    .makeup_content a ul li:nth-child(3) {
+        font-size: 30px;
+    }
+
+    .makeup_content a ul li:nth-child(4) {
+        font-size: 18px;
+    }
+
+    .makeup_left {
+        top: 20px;
+    }
+
+    .makeup_left a ul li:nth-child(3) {
+        font-size: 35px;
+    }
+
+    .makeup_left a ul li:nth-child(4) {
+        font-size: 22px;
+    }
+
+    .tag {
+        color: var(--gold90);
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .video {
+        gap: 70px;
+    }
+
+    .tag_big {
+        font-size: 28px;
+    }
+
+    .vid_contents .vidboth {
+        gap: 36px;
+    }
+
+    .vid_contents .vid {
+        height: 350px;
+    }
+
+    .vid a ul {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    h3 {
+        font-size: 50px;
+    }
+
+    .h3_text a span {
+        font-size: 30px;
+    }
+
+    .nav_middle {
+        display: none;
+    }
+
+    .nav_bottom {
+        justify-content: space-between;
+    }
+
+    .nav_bottom .logo {
+        display: flex;
+    }
+
+    .nav_bottom .logo img {
+        width: 105px;
+    }
+
+    nav .search {
+        display: none;
+    }
+
+    .fix {
+        flex-direction: column;
+    }
+
+    .fix .search {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 77px;
+    }
+
+    .fix .gnb>ul>li>a {
+        font-size: 20px;
+    }
+
+    .fix .gnb>ul>li {
+        height: 10%;
+        border-bottom: 1px solid var(--w-color);
+    }
+
+    .fix .gnb>ul>li>ul.sub {
+        display: none;
+    }
+
+    .main_visual .swiper-slide a p {
+        font-size: 35px;
+    }
+
+    .main_visual .swiper-slide a div {
+        font-size: 23px;
+    }
+
+    .main_visual .swiper-slide a p {
+        left: 20px;
+    }
+
+    .main_visual .swiper-slide a div {
+        left: 20px;
+    }
+
+    .skincare {
+        padding-top: 133px;
+    }
+
+    .skincare .swiper {
+        height: 700px;
+    }
+
+    .skincare .swiper-wrapper {
+        padding-left: 30px;
+    }
+
+    .skincare .swiper .h3_text {
+        padding-top: 20px;
+    }
+
+    .makeup_right {
+        width: 100%;
+        /* background: red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 60px;
+        padding: 0 20px;
+    }
+
+    .vid_contents {
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .vid_contents .vidboth {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        padding: 0 20px;
+    }
+
+    .vid a ul {
+        font-size: 17px;
+    }
+
+    .makeup_left {
+        display: none;
+    }
+
+    .store {
+        padding-bottom: 80px 0;
+    }
+
+    .store_slide {
+        padding-left: 30px;
+    }
+
+    .store_top {
+        display: none;
+    }
+
+    footer .top {
+        display: none;
+    }
+
+    footer .f_middle {
+        display: none;
+    }
+}
