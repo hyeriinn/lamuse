@@ -79,7 +79,7 @@
 
 /* skincare */
 .skincare {
-    padding: 180px 0;
+    padding: var(--web-padding);
     display: flex;
     /* background: greenyellow; */
     gap: 36px;
@@ -176,10 +176,10 @@
 
 /* makeup */
 .makeup {
-    padding: 180px 0;
+    padding: var(--web-padding);
     display: flex;
     flex-direction: column;
-    gap: 133px;
+    gap: var(--web-title-gap);
     align-items: center;
     /* background: green; */
 }
@@ -248,10 +248,10 @@
 
 /* video */
 .video {
-    padding: 180px 0;
+    padding: var(--web-padding);
     display: flex;
     flex-direction: column;
-    gap: 133px;
+    gap: var(--web-title-gap);
     align-items: center;
     /* 가운데로 정렬~ */
 }
@@ -373,11 +373,11 @@
 /* store */
 .store {
     width: 100%;
-    padding: 180px 0;
+    padding: var(--web-padding);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 133px;
+    gap: var(--web-title-gap);
     overflow: hidden;
 }
 

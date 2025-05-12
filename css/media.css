@@ -1,49 +1,4 @@
 @media screen and (max-width: 1024px) {
-    .nav_top {
-        display: none;
-    }
-
-    .nav_middle {
-        width: 100%;
-        padding-top: 20px;
-        justify-content: space-between;
-        height: auto;
-    }
-
-    .nav_middle .nav_right {
-        display: flex;
-    }
-
-    .nav_bottom {
-        justify-content: flex-end;
-    }
-
-    .fix {
-        opacity: 1;
-    }
-
-    .nv_right .ham {
-        display: block;
-        /* 또는 flex, inline-block 등 필요한 스타일 */
-    }
-
-    .nav_bottom ul.gnb {
-        display: none;
-    }
-
-    .search {
-        width: 300px;
-        height: 50px;
-    }
-
-    .search input {
-        font-size: 18px;
-    }
-
-    .fix .search {
-        display: none;
-    }
-
     .main_visual .swiper-slide {
         height: 500px;
     }
@@ -102,18 +57,8 @@
         font-size: 22px;
     }
 
-    .tag {
-        color: var(--gold90);
-        font-size: 23px;
-        font-weight: 700;
-    }
-
     .video {
         gap: 70px;
-    }
-
-    .tag_big {
-        font-size: 28px;
     }
 
     .vid_contents .vidboth {
@@ -130,75 +75,6 @@
 }
 
 @media screen and (max-width: 375px) {
-    h3 {
-        font-size: 50px;
-    }
-
-    .h3_text a span {
-        font-size: 30px;
-    }
-
-    .nav_middle {
-        display: none;
-    }
-
-    .nav_bottom {
-        justify-content: space-between;
-    }
-
-    .nav_bottom .logo {
-        display: flex;
-    }
-
-    .nav_bottom .logo img {
-        width: 105px;
-    }
-
-    nav .search {
-        display: none;
-    }
-
-    .fix {
-        flex-direction: column;
-    }
-
-    .fix .sns {
-        display: flex;
-    }
-
-
-    .fix .search {
-        display: flex;
-        margin: 0 auto;
-        margin-top: 77px;
-    }
-
-    .fix .gnb>ul>li>a {
-        font-size: 20px;
-    }
-
-    .fix .gnb>ul>li {
-        height: 10%;
-        border-bottom: 1px solid var(--w-color);
-    }
-
-    .fix .gnb>ul>li>ul.sub {
-        display: none;
-    }
-
-    .fix .us {
-        display: flex;
-        position: absolute;
-        left: 10%;
-        bottom: 11%;
-        transform: translateY(100px);
-        transition: 1s;
-    }
-
-    .fix.on .us {
-        transform: translateY(0);
-    }
-
     .main_visual .swiper-slide a p {
         font-size: 35px;
     }
@@ -271,14 +147,6 @@
     }
 
     .store_top {
-        display: none;
-    }
-
-    footer .top {
-        display: none;
-    }
-
-    footer .f_middle {
         display: none;
     }
 }

@@ -71,6 +71,8 @@
     --Pretendard: "Pretendard", serif;
     --Eulyoo: "Eulyoo", serif;
     --DM: "DM Serif Display", serif;
+    --web-padding: 180px 0;
+    --web-title-gap: 133px;
     /*     --title:48px
     --subtitle:24px
     --body:16px
@@ -99,6 +101,16 @@ h3 {
     font-style: italic;
 }
 
+h4 {
+    font-size: 60px;
+    font-family: var(--DM);
+}
+
+h5 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
 .tag {
     color: var(--gold90);
     font-size: 25px;
@@ -107,6 +119,17 @@ h3 {
 
 .tag_big {
     font-size: 30px;
+}
+
+.by {
+    color: var(--grey60);
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 35px;
 }
 
 .inner {
@@ -552,7 +575,8 @@ footer .f_middle {
 
 
 .sns ul li {
-    width: auto; /* li 너비 제한 */
+    width: auto;
+    /* li 너비 제한 */
 }
 
 footer .copy {
