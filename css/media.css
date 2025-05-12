@@ -129,7 +129,7 @@
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
     h3 {
         font-size: 50px;
     }
@@ -162,6 +162,11 @@
         flex-direction: column;
     }
 
+    .fix .sns {
+        display: flex;
+    }
+
+
     .fix .search {
         display: flex;
         margin: 0 auto;
@@ -179,6 +184,19 @@
 
     .fix .gnb>ul>li>ul.sub {
         display: none;
+    }
+
+    .fix .us {
+        display: flex;
+        position: absolute;
+        left: 10%;
+        bottom: 11%;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+
+    .fix.on .us {
+        transform: translateY(0);
     }
 
     .main_visual .swiper-slide a p {
