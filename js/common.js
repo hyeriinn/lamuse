@@ -1,35 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
 
-$('.ham').click(function () {
-    $('.fix').toggleClass('on');
+    $('.ham').click(function () {
+        $('.fix').toggleClass('on');
 
-    // fix에 on 클래스가 있으면 x 보이고 menu 숨기기
-    if ($('.fix').hasClass('on')) {
-        $('.ham .menu').css('opacity', '0');
-        $('.ham .x').css('opacity', '1');
-    } else {
-        $('.ham .menu').css('opacity', '1');
-        $('.ham .x').css('opacity', '0');
-    }
-});
-
-    /* lang 목록뜨게 */
-const langTriggers = document.querySelectorAll('.sel p');
-
-langTriggers.forEach(p => {
-    p.addEventListener('click', function () {
-        const selElement = this.closest('.sel');
-        if (selElement) {
-            selElement.classList.toggle('on');
+        // fix에 on 클래스가 있으면 x 보이고 menu 숨기기
+        if ($('.fix').hasClass('on')) {
+            $('.ham .menu').css('opacity', '0');
+            $('.ham .x').css('opacity', '1');
+        } else {
+            $('.ham .menu').css('opacity', '1');
+            $('.ham .x').css('opacity', '0');
         }
     });
-});
 
-    /* nav .sub 뜨게 */
+    /* lang 목록뜨게 */
+    const langTriggers = document.querySelectorAll('.sel p');
+
+    langTriggers.forEach(p => {
+        p.addEventListener('click', function () {
+            const selElement = this.closest('.sel');
+            if (selElement) {
+                selElement.classList.toggle('on');
+            }
+        });
+    });
+
     $('nav ul.gnb>li').hover(function () {
-        $(this).find('ul.sub').stop().slideDown();
+        $('ul.sub').stop().slideDown();
     }, function () {
-        $(this).find('ul.sub').stop().slideUp();
+        $('ul.sub').stop().slideUp();
     });
 });

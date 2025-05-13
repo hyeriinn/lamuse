@@ -1,0 +1,115 @@
+@media screen and (max-width: 1024px) {
+    header .sub_menu {
+        font-size: 30px;
+    }
+
+    .topper {
+        padding: var(--tab-padding);
+    }
+
+    .topper_left {
+        position: sticky;
+        top: 0;
+    }
+
+    .topper_left img {
+        width: 450px;
+    }
+
+    .thumb {
+        padding: var(--tab-padding);
+    }
+
+    .sub_main_title {
+        padding: 70px 0;
+    }
+
+    .sub_text img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    header .sub_menu {
+        font-size: 20px;
+        height: 51px;
+        /* 임시 */
+    }
+
+    header .sub_menu li {
+        padding: 8px 14px;
+    }
+
+    .topper {
+        height: auto;
+        padding: var(--phone-padding);
+        gap: var(--phone-title-gap);
+    }
+
+    .topper_left a ul li:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .topper_left {
+        position: static;
+        width: 300px;
+        height: auto;
+        margin-bottom: 37px;
+    }
+
+    .topper_left a ul li:nth-child(3) {
+        font-size: 30px;
+    }
+
+    .topper_left a ul li:nth-child(4) {
+        font-size: 22px;
+    }
+
+    .topper_left img {
+        width: 343px;
+    }
+
+    .topper_right {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .topper .topper_content {
+        flex-direction: column;
+    }
+
+    .thumb {
+        padding: var(--phone-padding);
+        gap: var(--phone-title-gap);
+    }
+
+    .sub_text {
+        flex-direction: column;
+    }
+
+    .sub_text_body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sub_text.right .sub_text_body {
+        align-items: flex-end;
+    }
+
+    .thumb img {
+        width: 100%;
+    }
+
+    .sub_text img {
+        width: 343px;
+    }
+
+    .sub_text.right img:first-child {
+        display: none;
+    }
+
+    .sub_text.right img:last-child {
+        display: flex;
+    }
+}

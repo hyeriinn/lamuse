@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="가볍게 즐기는 뷰티 매거진 구독 서비스입니다.">
+    <meta name="keywords" content="뷰티, 트렌드, 매거진, 구독">
+    <meta name="author" content="myojo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>common layout</title>
+    <!-- 구글 아이콘 연결 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common_media.css">
+    <link rel="stylesheet" href="css/commonlayout.css">
+    <link rel="stylesheet" href="css/CLM.css">
+
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/commonlayout.js" defer></script>
+</head>
+
+<body>
+    <div class="aside inner">
+        <aside class="chat">
+            <span class="material-symbols-outlined">
+                chat_bubble
+            </span>
+        </aside>
+        <aside class="up">
+            <a href="#"><span class="material-symbols-outlined">
+                    arrow_upward
+                </span></a>
+        </aside>
+    </div><!-- //.aside -->
+    <div class="fix">
+        <img src="img/side_bg.png" alt="la muse" class="logo">
+        <div class="search">
+            <input type="text" placeholder="제목, 내용을 입력해주세요">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </a>
+        </div><!-- //.search -->
+        <div class="gnb">
+            <ul>
+                <li><a href="#">뷰티</a>
+                    <ul class="sub">
+                        <li><a href="#">뷰티트렌드</a></li>
+                        <li><a href="#">피부고민해결법</a></li>
+                        <li><a href="#">저렴이vs고렴이</a></li>
+                        <li><a href="#">영상 속 제품</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="./fashionmain.html">패션</a>
+                    <ul class="sub">
+                        <li><a href="#">패션트렌드</a></li>
+                        <li><a href="#">스타일링 팁</a></li>
+                        <li><a href="#">할인정보</a></li>
+                        <li><a href="#">기온별 옷차림</a></li>
+                    </ul><!-- //.sub -->
+                </li>
+                <li><a href="#">셀럽 애정템</a>
+                </li>
+                <li><a href="#">스토어</a>
+                </li>
+                <li><a href="#">구독하기</a>
+                </li>
+                <li><a href="#">마이페이지</a>
+                </li>
+            </ul>
+        </div><!-- //.gnb -->
+        <div class="sns">
+            <ul>
+                <li><a href="#"><img src="img/sns1.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="img/sns2.png" alt="youtube"></a></li>
+                <li><a href="#"><img src="img/sns3.png" alt="facebook"></a></li>
+            </ul>
+        </div><!-- //.sns -->
+        <ul class="us">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">광고·제휴 문의</a></li>
+            <li><a href="#">윤리경영</a></li>
+        </ul><!-- //.us -->
+    </div><!-- //.fix -->
+    <nav>
+        <div class="inner">
+            <div class="nav_top">
+                <div class="nav_left">
+                    <!-- 로그인시 반갑습니다 쓰일 자리 -->
+                </div><!-- //.nav_left -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="#" class="login">
+                        <p>LOG IN</p>
+                        <span class="material-symbols-outlined">
+                            login
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div><!-- //.nav_top -->
+            <div class="nav_middle">
+                <div class="logo">
+                    <h1><a href="./index.html"><img src="img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <div class="nav_right">
+                    <div class="sel">
+                        <p>
+                            <strong>KOR</strong>
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span>
+                        </p>
+                        <ul>
+                            <li><a href="#"><strong>ENG</strong></a></li>
+                            <li><a href="#"><strong>JPN</strong></a></li>
+                        </ul>
+                    </div><!-- //.sel -->
+                    <a href="#" class="login">
+                        <p>LOG IN</p>
+                        <span class="material-symbols-outlined">
+                            login
+                        </span>
+                    </a>
+                </div><!-- //.nav_right -->
+            </div>
+            <div class="nav_bottom">
+                <div class="logo">
+                    <h1><a href="#"><img src="img/logo.png" alt="La MUSE"></a></h1>
+                </div><!-- //.logo -->
+                <ul class="gnb">
+                    <li><a href="#">뷰티</a>
+                        <ul class="sub">
+                            <li><a href="#">뷰티트렌드</a></li>
+                            <li><a href="#">피부고민해결법</a></li>
+                            <li><a href="#">저렴이vs고렴이</a></li>
+                            <li><a href="#">영상 속 제품</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="./fashionmain.html">패션</a>
+                        <ul class="sub">
+                            <li><a href="#">패션트렌드</a></li>
+                            <li><a href="#">스타일링 팁</a></li>
+                            <li><a href="#">할인정보</a></li>
+                            <li><a href="#">기온별 옷차림</a></li>
+                        </ul><!-- //.sub -->
+                    </li>
+                    <li><a href="#">셀럽애정템</a>
+                    </li>
+                    <li><a href="#">스토어</a>
+                    </li>
+                    <li><a href="#">구독하기</a>
+                    </li>
+                    <li><a href="#">마이페이지</a></li>
+                </ul><!-- //.gnb -->
+                <div class="nv_right">
+                    <div class="search">
+                        <input type="text" placeholder="제목, 내용을 입력해주세요">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
+                    </div><!-- //.search -->
+                    <div class="ham">
+                        <span class="material-symbols-outlined menu">
+                            menu
+                        </span>
+                        <span class="material-symbols-outlined x">
+                            close
+                        </span>
+                    </div><!-- //.ham -->
+                </div><!-- //.nv_right -->
+            </div><!-- //.nav_bottom -->
+        </div><!-- //.inner -->
+    </nav>
+    <header>
+        <div class="title">
+            <h4>FASHION</h4>
+        </div><!-- //.title -->
+        <ul class="sub_menu inner">
+            <li class="pick"><a href="./fashionmain.html">전체</a></li>
+            <li><a href="#">패션트렌드</a></li>
+            <li><a href="#">스타일링 팁</a></li>
+            <li><a href="#">할인정보</a></li>
+            <li><a href="#">기온별 코디</a></li>
+        </ul><!-- //.sub_menu -->
+    </header>
+
+    <div class="topper inner">
+        <h5>조회수 <span>TOP 5</span></h5>
+        <div class="topper_content">
+            <div class="topper_left">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/fashion_top1.png" alt="레트로 선글라스, 다시 유행 탄 거 실화?"></li>
+                        <li class="tag tag_big">패션트렌드</li>
+                        <li>레트로 선글라스,<br>다시 유행 탄 거 실화?</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.topper_left -->
+            <div class="topper_right">
+                <div class="toppersmall">
+                    <a href="#">
+                        <ul>
+                            <li><img src="img/fashion_top2.png" alt="발레코어 슈즈, 그게 뭔데?"></li>
+                            <li class="tag">패션트렌드</li>
+                            <li class="name">발레코어 슈즈, 그게 뭔데?</li>
+                            <li class="by">2025.05.12</li>
+                        </ul>
+                    </a>
+                </div><!-- //.toppersmall -->
+                <div class="toppersmall">
+                    <a href="#">
+                        <ul>
+                            <li><img src="img/fashion_top3.png" alt="커버메이크업"></li>
+                            <li class="tag">스타일링 팁</li>
+                            <li class="name">구겨진 옷, 다리미 없이 펴는 꿀팁!</li>
+                            <li class="by">2025.05.12</li>
+                        </ul>
+                    </a>
+                </div><!-- //.toppersmall -->
+                <div class="toppersmall">
+                    <a href="#">
+                        <ul>
+                            <li><img src="img/fashion_top4.png" alt="커버메이크업"></li>
+                            <li class="tag">스타일링 팁</li>
+                            <li class="name">흘러내리는 어깨끈, 1분만에 고정하기</li>
+                            <li class="by">2025.05.12</li>
+                        </ul>
+                    </a>
+                </div><!-- //.toppersmall -->
+                <div class="toppersmall">
+                    <a href="#">
+                        <ul>
+                            <li><img src="img/fashion_top5.png" alt="커버메이크업"></li>
+                            <li class="tag">패션트렌드</li>
+                            <li class="name">Y2K 아직 안 끝났다고? 2025 버전!</li>
+                            <li class="by">2025.05.12</li>
+                        </ul>
+                    </a>
+                </div><!-- //.toppersmall -->
+            </div><!-- //.topper_right -->
+        </div><!-- //.topper_content -->
+    </div><!-- //.topper -->
+
+    <div class="thumb inner">
+        <div class="thumb_title">
+            <a href="#">
+                <h5>올해 트렌드</h5>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.thumb_title -->
+        <div class="thumb_contents">
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/trend1.png" alt="발레코어, 슈즈까지 나왔다고?"></li>
+                        <li class="name">발레코어, 슈즈까지 나왔다고?</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/trend2.png" alt="Y2K 아직 안 끝났다고? 2025 버전!"></li>
+                        <li class="name">Y2K 아직 안 끝났다고? 2025 버전!</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/trend3.png" alt="이번 봄엔 '실키룩'이 대세라고?"></li>
+                        <li class="name">이번 봄엔 '실키룩'이 대세라고?</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/trend4.png" alt="지퍼 바지 대신 끈 바지? ‘스트랩 코어’  "></li>
+                        <li class="name">지퍼 바지 대신 끈 바지? ‘스트랩 코어’  </li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/trend5.png" alt="화이트 데님, 요즘엔 이렇게 입어!"></li>
+                        <li class="name">화이트 데님, 요즘엔 이렇게 입어!</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/trend6.png" alt="요즘 애들 다 입는 바람막이!"></li>
+                        <li class="name">요즘 애들 다 입는 바람막이!</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+        </div><!-- //.thumb_contents -->
+    </div><!-- //.thumb -->
+
+    <div class="thumb inner">
+        <div class="thumb_title">
+            <a href="#">
+                <h5>스타일링 팁</h5>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </a>
+        </div><!-- //.thumb_title -->
+        <div class="thumb_contents">
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/styletip1.png" alt="블라우스 단추 벌어짐 없애는 비밀 팁"></li>
+                        <li class="name">블라우스 단추 벌어짐 없애는 비밀 팁
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/styletip2.png" alt="조절 안되는 가방 끈 짧게 드는 법"></li>
+                        <li class="name">조절 안되는 가방 끈 짧게 드는 법</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/styletip3.png" alt="스웨터 정전기 줄이는 손쉬운 방법"></li>
+                        <li class="name">스웨터 정전기 줄이는 손쉬운 방법</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/styletip4.png" alt="긴 바지 접지 않고 길이 조절하는 꿀팁"></li>
+                        <li class="name">긴 바지 접지 않고 길이 조절하는 꿀팁</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/styletip5.png" alt="헐렁한 모자 핏 조절하는 팁"></li>
+                        <li class="name">헐렁한 모자 핏 조절하는 팁</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+            <div class="thumb_small">
+                <a href="#">
+                    <ul>
+                        <li><img src="img/styletip6.png" alt="부한 패딩 슬림하게 연출하는 레이어링 법"></li>
+                        <li class="name">부한 패딩 슬림하게 연출하는<br>레이어링 법</li>
+                        <li class="by">2025.05.12</li>
+                    </ul>
+                </a>
+            </div><!-- //.thumb_small -->
+        </div><!-- //.thumb_contents -->
+    </div><!-- //.thumb -->
+
+    <footer>
+        <div class="f_contents inner">
+            <div class="top">
+                <ul>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">광고·제휴 문의</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                </ul>
+            </div><!-- //.top -->
+            <div class="f_middle">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/footer_logo.png" alt="LaMUSE">
+                    </a>
+                </div><!-- //.logo -->
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="img/sns1.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="img/sns2.png" alt="youtube"></a></li>
+                        <li><a href="#"><img src="img/sns3.png" alt="facebook"></a></li>
+                    </ul>
+                </div><!-- //.sns -->
+            </div><!-- //.f_middle -->
+            <div class="copy">
+                © 2025 LaMUSE. All Rights Reserved.
+            </div><!-- //.copy -->
+        </div><!-- //.f_contents -->
+    </footer>
+</body>
+
+</html>
