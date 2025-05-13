@@ -73,7 +73,11 @@
     --DM: "DM Serif Display", serif;
     --web-padding: 180px 0;
     --web-title-gap: 133px;
-    /*     --title:48px
+    --tab-padding: 130px 0;
+    --tab-title-gap: 83px;
+    --phone-padding: 80px 0;
+    /*
+    --title:48px
     --subtitle:24px
     --body:16px
     --caption:14px */
@@ -95,6 +99,14 @@ body {
     font-family: var(--Pretendard);
 }
 
+/* h1은 로고임~ */
+
+h2 {
+    font-size: 400px;
+    font-family: var(--DM);
+    color: var(--grey80);
+}
+
 h3 {
     font-size: 90px;
     font-family: var(--DM);
@@ -109,6 +121,11 @@ h4 {
 h5 {
     font-size: 60px;
     font-weight: 600;
+}
+
+h6 {
+    font-size: 40px;
+    font-weight: 800;
 }
 
 .tag {
@@ -127,6 +144,11 @@ h5 {
     font-size: 22px;
 }
 
+.sub_text_body {
+    font-size: 40px;
+    font-weight: 400;
+}
+
 .name {
     font-weight: 500;
     font-size: 35px;
@@ -137,7 +159,7 @@ h5 {
     max-width: clamp(343px, 100%, 1570px);
     /* 모바일 343px, 웹 1570px 사이 동적 조정 */
     margin: 0 auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     /* background: #ccc; */
 }
 

@@ -13,7 +13,7 @@
 
     .skincare {
         padding-top: 50px;
-        padding-bottom: 100px;
+        padding-bottom: 130px;
         gap: 40px;
     }
 
@@ -27,6 +27,10 @@
 
     .skincare_left {
         display: none;
+    }
+
+    .makeup {
+        padding: var(--tab-padding);
     }
 
     .makeup_left {
@@ -58,6 +62,7 @@
     }
 
     .video {
+        padding: var(--tab-padding);
         gap: 70px;
     }
 
@@ -92,19 +97,19 @@
     }
 
     .skincare {
-        padding-top: 133px;
+        gap: 40px;
     }
 
     .skincare .swiper {
         height: 700px;
     }
 
-    .skincare .swiper-wrapper {
-        padding-left: 30px;
-    }
-
     .skincare .swiper .h3_text {
         padding-top: 20px;
+    }
+
+    .makeup {
+        padding: var(--phone-padding);
     }
 
     .makeup_right {
@@ -115,6 +120,10 @@
         justify-content: space-evenly;
         gap: 60px;
         padding: 0 20px;
+    }
+
+    .video {
+        padding: var(--phone-padding);
     }
 
     .vid_contents {
