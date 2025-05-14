@@ -20,6 +20,10 @@
         padding: var(--tab-padding);
     }
 
+    .thumb_small.none {
+        display: flex;
+    }
+
     .sub_main_title {
         padding: 70px 0;
     }

@@ -26,9 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    $('nav ul.gnb>li').hover(function () {
+/*     $('nav ul.gnb>li').hover(function () {
         $('ul.sub').stop().slideDown();
     }, function () {
         $('ul.sub').stop().slideUp();
+    });한번에 내려오는 거 */
+
+        $('nav ul.gnb>li').hover(function(){
+        $(this).find('ul.sub').stop().slideDown();
+    },function(){
+        $(this).find('ul.sub').stop().slideUp();
     });
 });

@@ -2,7 +2,6 @@
 
 header {
     width: 100%;
-    height: clamp(320px, 21.2vw, 407px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +15,7 @@ header .title {
     align-items: center;
 }
 
-header .sub_menu {
+/* header .sub_menu {
     height: 107px;
     display: flex;
     gap: 36px;
@@ -33,7 +32,7 @@ header .sub_menu li {
 header .sub_menu li.pick {
     border-bottom: 3px solid var(--main-red);
     font-weight: 600;
-}
+} */
 
 /* topper */
 .topper {
@@ -145,6 +144,10 @@ header .sub_menu li.pick {
     gap: 20px;
 }
 
+.thumb_small.none {
+    display: none;
+}
+
 
 /* tag_sub */
 .tag_sub {
@@ -164,10 +167,11 @@ header .sub_menu li.pick {
 
 /* sub_main_title */
 .sub_main_title {
-    padding: 93px 0;
+    padding: 61px 0;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    /* 임시 */
 }
 
 .sub_main_title .title_one p {
@@ -175,6 +179,37 @@ header .sub_menu li.pick {
     padding-left: 3px;
     padding-top: 10px;
 }
+
+.icons {
+    display: flex;
+    gap: 24px;
+    /* 임시 */
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--w-color);
+    border-radius: 50px;
+}
+
+.icon a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon span {
+    color: var(--main-font);
+    font-size: 30px;
+    /* 임시 */
+}
+
 
 /* sub_text */
 .sub_text {
@@ -232,4 +267,93 @@ header .sub_menu li.pick {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+/* number */
+.number {
+    display: flex;
+    justify-content: center;
+}
+
+.number ul {
+    display: flex;
+    gap: 26px;
+    /* 임시 */
+    align-items: center;
+    font-size: 46px;
+    /* 임시 */
+    font-weight: 300;
+    padding: 37px 0;
+    /* 임시 */
+}
+
+.number ul li.pick {
+    font-weight: 600;
+}
+
+.number ul li a span {
+    font-size: 30px;
+}
+
+
+/* subsub_title */
+.subsub_title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    width: 108px;
+    height: 40px;
+    position: relative;
+    font-size: 18px;
+}
+
+.filter p {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+    background: var(--main-font);
+    border: 1px solid var(--w-color);
+    border-radius: 10px;
+}
+
+.filter p span {
+    font-size: 36px;/* 임시 */
+    transition: 0.6s;
+}
+
+.filter.on p span {
+    transform: rotate(180deg);
+}
+
+.filter ul {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: 0;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--main-font);
+    border: 1px solid var(--w-color);
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.filter.on ul {
+    opacity: 1;
+    top: 40px;
 }
