@@ -122,19 +122,25 @@
         margin-top: 77px;
     }
 
-    .fix .gnb>ul>li>a {
-        font-size: 20px;
+    .fix .gnb {
+        width: 100%;
     }
 
     .fix .gnb>ul {
-        width: 34px;
+        width: 90%;
         position: relative;
     }
 
     .fix .gnb>ul>li {
-        background: orange;
+        width: 100%;
+        /* background: orange; */
         height: 20%;
         border-bottom: 1px solid var(--w-color);
+    }
+
+    .fix .gnb>ul>li>a {
+        font-size: 20px;
+        width: 100%;
     }
 
     .fix .gnb>ul>li>ul.sub {
@@ -144,7 +150,7 @@
     .fix .us {
         display: flex;
         position: absolute;
-        left: 10%;
+        left: 5%;
         bottom: 11%;
         transform: translateY(100px);
         transition: 1s;
