@@ -1170,10 +1170,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* 일단 */
 }
 
 .product_small {
+    width: 30%;
     padding-bottom: 70px;
 }
 
