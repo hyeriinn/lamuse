@@ -431,12 +431,6 @@
     padding-bottom: 80px;
 }
 
-/* .list_contents .list_small:nth-child(4),
-.list_contents .list_small:nth-child(5),
-.list_contents .list_small:nth-child(6) {
-    padding-bottom: 0;
-} */
-
 .list_contents .list_small a ul {
     display: flex;
     flex-direction: column;
@@ -933,7 +927,7 @@
     align-items: center;
     font-size: 26px;
     font-weight: 300;
-    padding: var(--number-padding);
+    padding: 100px 0;
 }
 
 .number ul li.pick {

@@ -103,7 +103,7 @@
     
     --tab-title-gap: 83px 0; */
 
-    --number-padding: clamp(24px, 1.3vw + 12px, 40px) 0;
+    --number-padding: clamp(24px, 1.3vw + 12px, 100px) 0;
     --list-padding: clamp(30px, 2vw + 10px, 50px) 0;
     --list-padding2: clamp(24px, 1.5vw + 10px, 40px) 0;
 

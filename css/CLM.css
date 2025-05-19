@@ -264,7 +264,7 @@
         align-items: center;
         font-size: 18px;
         font-weight: 300;
-        padding: var(--number-padding);
+        padding: 70px 0;
     }
 
     /* banner */
@@ -762,6 +762,7 @@
         font-weight: 400;
         line-height: normal;
         align-items: center;
+        padding: 48px 0;
     }
 
     .number ul li a span {
