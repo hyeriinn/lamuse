@@ -109,7 +109,30 @@
     }
 
     /* list */
+    .list_left {
+        display: none;
+    }
 
+    .list .list_right {
+        width: 100%;
+    }
+
+    .list .list_right ul li {
+        width: 100%;
+    }
+
+    .list_img {
+        display: flex;
+    }
+
+    .list_img img {
+        width: 100%;
+        height: 378px;
+    }
+
+    li.two .list_img img {
+        object-position: center 18%;
+    }
 
     /* tag_sub */
     .tag_sub {
@@ -503,6 +526,9 @@
     } */
 
     /* list_contents */
+    .list {
+        padding: 0;
+    }
     .list_contents .list_small {
         padding-bottom: 25px;
     }
@@ -515,6 +541,18 @@
         align-self: flex-start;
     } */
     /* 자신만큼만 크기 차지 */
+
+    .list .list_right ul li a .group {
+        gap: 16px;
+    }
+
+    .dm_n {
+        font-size: 28px;
+    }
+
+    .list_img img {
+        height: 144px;
+    }
 
     /* tag_sub */
     .tag_sub {
