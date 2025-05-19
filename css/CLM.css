@@ -1,5 +1,75 @@
 @media screen and (max-width: 1024px) {
-    :root {}
+    .mp_contents {
+        flex-direction: column;
+    }
+
+    .mp_name {
+        font-size: 30px;
+    }
+
+    .mp_name ul li.body_article {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.56px;
+    }
+
+    .mp_left {
+        width: 100%;
+    }
+
+    .mp_list ul {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .mp_list ul li {
+        width: 100%;
+        justify-content: center;
+        border-bottom: 1px solid var(--grey60);
+    }
+
+    .mp_list ul li.on {
+        border-bottom: 0;
+    }
+
+    .mp_right {
+        width: 100%;
+    }
+
+    .mp_right .mp_profile ul li {
+        padding: 24px 0;
+    }
+
+    .mp_right .mp_profile ul li .first {
+        font-size: 18px;
+    }
+
+    .mp_right .mp_profile ul li .first .subs_list {
+        font-size: 18px;
+    }
+
+    .mp_table {
+        font-size: 18px;
+    }
+
+    .mp_divide {
+        padding: 36px 0;
+    }
+
+    .mp_divide ul {
+        gap: 24px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+
+    .mp_button {
+        font-size: 18px;
+    }
 
     /* fashion_sale */
     .sale_txt {
@@ -380,6 +450,115 @@
 }
 
 @media screen and (max-width: 375px) {
+
+    .mp_table li.no,
+    .mp_first li.no {
+        display: none;
+    }
+
+    .mp_first ul {
+        height: 46px;
+    }
+
+    .mp_title {
+        display: none;
+    }
+
+    .mp_name {
+        font-size: 20px;
+    }
+
+    .mp_name ul {
+        gap: 10px;
+    }
+
+    .mp_name ul li.body_article {
+        font-size: 20px;
+    }
+
+    .mp_list {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 20.8px */
+        letter-spacing: -0.32px;
+    }
+
+    .mp_list ul li {
+        gap: 10px;
+        height: 50px;
+    }
+
+    .mp_list ul li span {
+        font-size: 25px;
+    }
+
+    .mp_right {
+        margin-top: 20px;
+        height: 700px;
+        /* 임시 */
+    }
+
+    .mp_right .mp_profile ul li {
+        padding: 16px 0;
+    }
+
+    .mp_right .mp_profile ul li .first .subs_list {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .mp_button {
+        width: 68px;
+        height: 38px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        /* 18.2px */
+        letter-spacing: -0.28px;
+    }
+
+    .mp_first.by {
+        font-size: 16px;
+    }
+
+    .mp_like .mp_divide {
+        display: none;
+    }
+
+    .mp_like .mp_tables {
+        padding-top: 20px;
+    }
+
+    /* 흐흐흐 */
+    .mp_table {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 20.8px */
+        letter-spacing: -0.32px;
+    }
+
+    .mp_divide {
+        padding: 36px 0;
+    }
+
+    .mp_divide ul {
+        gap: 24px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .mp_divide ul li {
+        width: 85px;
+        padding: 10px 0px;
+    }
+
     header .sub_menu {
         font-size: 20px;
         height: 51px;
@@ -529,6 +708,7 @@
     .list {
         padding: 0;
     }
+
     .list_contents .list_small {
         padding-bottom: 25px;
     }

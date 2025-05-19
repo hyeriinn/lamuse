@@ -226,6 +226,16 @@ h6 {
     letter-spacing: -1.2px;
 }
 
+.mp_title {
+    font-family: var(--DM);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 2px solid var(--w-color);
+    padding: 20px 0px;
+}
+
 .tag {
     color: var(--gold90);
     font-size: 24px;

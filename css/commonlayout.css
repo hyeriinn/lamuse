@@ -60,6 +60,261 @@
     background-size: cover;
 }
 
+/* my page */
+.mp_contents {
+    padding-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mp_left {
+    width: 248px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.mp_name {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid var(--w-color);
+    padding: 20px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 43.2px */
+    letter-spacing: -0.72px;
+}
+
+.mp_name ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mp_name ul li.body_article {
+    color: var(--grey40);
+}
+
+.mp_list {
+    width: 100%;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.44px;
+}
+
+.mp_list ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mp_list ul li {
+    width: 90%;
+    height: 78px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.mp_list ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--main-red);
+    scale: 0;
+    transition: .2s;
+}
+
+.mp_list ul li.on::after {
+    scale: 1;
+}
+
+.mp_list ul li span {
+    font-size: 30px;
+}
+
+.mp_right {
+    width: calc(100% - 296px);
+    height: 1000px;
+    position: relative;
+}
+
+.mp_first.by {
+    color: var(--w-color);
+}
+
+.mp_right .mp_profile {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.mp_right .mp_profile.on {
+    display: flex;
+}
+
+.mp_right .mp_like {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.mp_right .mp_like.on {
+    display: flex;
+    flex-direction: column;
+}
+
+.mp_tables {
+    width: 100%;
+}
+
+.mp_first {
+    width: 100%;
+}
+
+.mp_first ul {
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--grey80);
+}
+
+.mp_first ul li {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.mp_table {
+    width: 100%;
+    /* background: #ccc; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.mp_table ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mp_table ul li {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    height: 84px;
+    align-items: center;
+}
+
+.mp_right .mp_subs {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.mp_right .mp_subs.on {
+    display: flex;
+    flex-direction: column;
+}
+
+.mp_right .mp_profile ul {
+    width: 100%;
+}
+
+.mp_right .mp_profile ul li {
+    width: 100%;
+    padding: 36px 0px;
+    border-bottom: 1px solid var(--grey80);
+    display: flex;
+    justify-content: space-between;
+}
+
+.mp_right .mp_profile ul li .first {
+    display: flex;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-items: center;
+}
+
+.mp_right .mp_profile ul li .first .subs_list {
+    width: 160px;
+}
+
+.mp_button {
+    width: 108px;
+    height: 58px;
+    border-radius: 5px;
+    background: var(--grey80);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.mp_button a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mp_divide {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.mp_divide ul {
+    display: flex;
+    gap: 46px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    justify-content: center;
+}
+
+.mp_divide ul li {
+    display: flex;
+    padding: 13px 49px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid var(--w-color);
+    cursor: pointer;
+}
+
+.mp_divide ul li.on {
+    background: var(--main-red);
+    border: 0;
+}
+
 /* title */
 .title {
     display: flex;
@@ -1118,14 +1373,10 @@
     color: var(--main-red);
 }
 
-/* .bannerimg {
-    width: auto;
-    height: auto;
-    position: relative;
-    font-family: var(--DM);
-    font-size: 24px; */
-/* 임시 */
-/* } */
+/* my page */
+.tag_sub_wrap.mp {
+    background: var(--main-font);
+}
 
 .banner .bannerimg::after {
     content: 'view';
