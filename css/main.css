@@ -6,12 +6,6 @@
     position: relative;
 }
 
-/* .main-pagination {
-    position: absolute;
-    z-index: 10;
-} */
-/* 위치 나중에 다시 잡아보기 */
-
 .main_visual .swiper-slide {
     width: 100%;
     height: 909px;
@@ -154,7 +148,6 @@
     height: 490px;
     /* background: #d5d5d5; */
     font-size: 24px;
-
 }
 
 .skincare .swiper-slide a {
@@ -163,7 +156,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* 임시 */
     justify-content: space-between;
     align-items: flex-start;
     opacity: .8;
@@ -230,10 +222,6 @@
 
 .makeup_left {
     width: 600px;
-    height: 766px;
-    /* 있어야 sticky가 먹네 */
-    position: sticky;
-    top: 0;
 }
 
 .makeup_left a {
@@ -245,10 +233,9 @@
 .makeup_right {
     width: 58%;
     /* background: red; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
 }
 
 .makeup_right ul li {
@@ -261,6 +248,10 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+.makeupsmall.no {
+    display: none;
 }
 
 /* video */
@@ -293,22 +284,22 @@
 }
 
 .vid_contents .vid.vid_one {
-    background: url(../img/video1.png)no-repeat center center;
+    background: url(../img/main_img11.png)no-repeat center center;
     background-size: cover;
 }
 
 .vid_contents .vid.vid_two {
-    background: url(../img/video2.png)no-repeat center center;
+    background: url(../img/main_img12.png)no-repeat center center;
     background-size: cover;
 }
 
 .vid_contents .vid.vid_three {
-    background: url(../img/video3.png)no-repeat center center;
+    background: url(../img/main_img13.png)no-repeat center center;
     background-size: cover;
 }
 
 .vid_contents .vid.vid_four {
-    background: url(../img/video4.png)no-repeat center center;
+    background: url(../img/main_img14.png)no-repeat center center;
     background-size: cover;
 }
 
@@ -350,7 +341,7 @@
     height: 25%;
     border-top: 2px solid var(--w-color);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 35px;
     font-style: normal;
