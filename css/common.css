@@ -40,6 +40,13 @@
 }
 
 @font-face {
+    font-family: 'Sokcho';
+    src: url('../font/SokchoBadaBatang.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Eulyoo';
     src: url('../font/Eulyoo1945-Regular.woff') format('woff');
     font-weight: 400;
@@ -76,17 +83,46 @@
     --grey80: #474747;
     --grey90: #212121;
     --Pretendard: "Pretendard", serif;
-    --Eulyoo: "Eulyoo", serif;
     --DM: "DM Serif Display", serif;
-    --padding-left: 20px;
-    --web-padding: 180px 0;
-    --web-title-gap: 133px;
-    --tab-padding: 130px 0;
-    --tab-title-gap: 83px 0;
-    --phone-padding: 80px 0;
-    --phone-title-gap: 50px 0;
-    --title: 48px;
-    --body-font: 28px;
+    --Sokcho: "Sokcho", serif;
+    --Eulyoo: "Eulyoo", serif;
+
+    /*     --number-padding: 40px 0;
+    --list-padding: 50px 0;
+    --list-padding2: 40px 0;
+    --ul-gap: 24px;
+    --ul-gap2: 32px;
+    --banner-gap: 36px;
+    --list-padding-bottom: 80px;
+    --article-padding: 120px;
+
+    --web-title-gap: 36px;
+    --web-padding: 80px 0;
+
+    --tab-padding: 40px 0;
+    
+    --tab-title-gap: 83px 0; */
+
+    --number-padding: clamp(24px, 1.3vw + 12px, 40px) 0;
+    --list-padding: clamp(30px, 2vw + 10px, 50px) 0;
+    --list-padding2: clamp(24px, 1.5vw + 10px, 40px) 0;
+
+    --ul-gap: clamp(20px, 1.2vw + 6px, 24px);
+    --ul-gap2: clamp(20px, 1.6vw + 8px, 32px);
+    --banner-gap: clamp(20px, 1.7vw + 8px, 36px);
+    --list-padding-bottom: clamp(40px, 3vw + 20px, 80px);
+    --article-padding: clamp(60px, 5vw + 20px, 120px);
+
+    --web-title-gap: clamp(20px, 1.5vw + 10px, 36px);
+    --web-padding: clamp(40px, 3vw + 10px, 80px) 0;
+    --phone-padding: 20px 0;
+
+    --tab-padding: clamp(24px, 2vw + 8px, 40px) 0;
+    --phone-title-gap: 30px;
+    --title: clamp(28px, 2.5vw + 8px, 48px);
+    --body-font: clamp(18px, 1.5vw + 6px, 28px);
+    --tab-gap: 24px;
+    --phone-gap: 16px;
 }
 
 * {
@@ -96,6 +132,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -105,14 +142,25 @@ body {
     font-family: var(--Pretendard);
 }
 
+div img {
+    border-radius: 10px;
+}
+
+nav .logo img,
+footer .logo img {
+    border-radius: 0;
+}
+
+img {
+    object-fit: cover;
+}
+
 /* h1은 로고임~ */
 
 h2 {
     font-size: 240px;
     font-family: var(--DM);
     color: var(--grey80);
-    position: absolute;
-    z-index: -1;
 }
 
 h2.left {
@@ -133,13 +181,20 @@ h3 {
 }
 
 h4 {
-    font-size: 60px;
+    font-size: 55px;
     font-family: var(--DM);
+    font-style: italic;
+
 }
 
 h5 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
+}
+
+h5.sokcho {
+    font-family: var(--Sokcho);
+    font-weight: 400;
 }
 
 h5 span {
@@ -152,31 +207,76 @@ h6 {
     font-weight: 500;
     line-height: 120%;
     /* 24px */
+    letter-spacing: -0.4px;
+}
+
+.subs_list {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.dm_n {
+    font-family: var(--DM);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.2px;
 }
 
 .tag {
     color: var(--gold90);
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
 }
 
 .tag_big {
     font-size: 30px;
     color: var(--gold90);
-    font-weight: 700;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
 }
+
+/* 혹시모르니그냥두기 */
 
 .by {
     color: var(--grey60);
-    font-weight: 500;
-    font-size: 22px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.dark {
+    color: var(--main-font);
+}
+
+.body_article {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.body_article.b {
+    font-weight: 600;
+}
+
+.body_article span {
+    font-weight: 600;
 }
 
 .name {
     font-weight: 400;
     font-size: 28px;
     letter-spacing: -0.56px;
-    line-height: 33px;
+    line-height: normal;
 }
 
 .light_font {
@@ -187,28 +287,61 @@ h6 {
     letter-spacing: -0.4px;
 }
 
+.light_font span {
+    font-weight: 600;
+}
+
+.light_font.b {
+    font-weight: 600;
+}
+
 .light_font_b {
     font-size: var(--body-font);
     line-height: 120%;
     /* 33.6px */
     letter-spacing: -0.56px;
+    font-weight: 300;
 }
 
-.button {
-    width: 209px;
-    height: 53px;
+.medium {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.medium_title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.button_subs_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.button_subs {
+    width: 281px;
+    height: 58px;
     border-radius: 10px;
     background: var(--main-red);
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 30px;
 }
 
-.button a {
+.button_subs a {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.none {
+    display: none;
 }
 
 .inner {
@@ -384,6 +517,7 @@ aside.up a {
 
 /* nav */
 nav {
+    background: var(--footer);
     width: 100%;
     /* 반응형이라 height값 없애기...!!!! */
 }
@@ -442,7 +576,7 @@ nav .inner {
     cursor: pointer;
     position: relative;
     z-index: 20;
-    background: var(--main-font);
+    background: var(--footer);
 }
 
 .sel p span {

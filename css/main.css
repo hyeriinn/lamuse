@@ -49,59 +49,57 @@
 
 .main_visual li.one {
     background: url(../img/main1.png) no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .main_visual li.two {
     background: url(../img/main2.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .main_visual li.three {
     background: url(../img/main3.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .main_visual li.four {
     background: url(../img/main1.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .main_visual li.five {
     background: url(../img/main2.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .main_visual li.six {
     background: url(../img/main3.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 /* skincare */
 .skincare {
-    padding: var(--web-padding);
+    padding-top: 387px;
+    padding-bottom: 150px;
     display: flex;
     /* background: greenyellow; */
     gap: 36px;
-    align-items: flex-end;/* 끝정렬 */
-    /* font-family: var(--Eulyoo); */
-}
-
-
-.skincare img {
-    border-radius: 10px;
+    align-items: flex-end;
 }
 
 .skincare_left {
     width: 629px;
-    height: 990px;/* 임시임 */
+    height: 963px;
+    /* 임시임 */
     /* background: rgb(188, 188, 188); */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 500;
-    /* 임시임 */
+    line-height: 120%;
+    /* 57.6px */
+    letter-spacing: -0.96px;
 }
 
 .skincare_left a {
@@ -110,26 +108,27 @@
     display: flex;
     flex-direction: column;
     /* background: #ccc; */
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .skincare .skincare_txt {
     display: flex;
     flex-direction: column;
-    gap: 20px;/* 임시 */
+    gap: 12px;
 }
 
 
 .skincare .swiper {
     width: 1027px;
-    height: 889px;
+    height: 682px;
     /* 부모의 고정 너비 */
     /* background: green; */
     overflow: hidden;
     /* 스크롤 안 보이게 */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 35px;
+    margin-bottom: 25px;
 }
 
 .skincare .swiper .h3_text {
@@ -137,7 +136,6 @@
     height: 100px;
     /* 또는 flex: 0 0 auto; */
     /* background: rgb(255, 106, 106); */
-    padding-top: 30%;
 }
 
 .skincare .swiper-wrapper {
@@ -164,11 +162,16 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;/* 임시 */
+    gap: 15px;
+    /* 임시 */
     justify-content: space-between;
     align-items: flex-start;
     opacity: .8;
     transition: .3s;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .skincare .swiper-slide a img {
@@ -181,10 +184,10 @@
 
 /* makeup */
 .makeup {
-    padding: var(--web-padding);
+    padding: 150px 0;
     display: flex;
     flex-direction: column;
-    gap: var(--web-title-gap);
+    gap: 120px;
     align-items: center;
     /* background: green; */
 }
@@ -195,32 +198,40 @@
     justify-content: space-between;
 }
 
-.makeup img {
-    border-radius: 10px;
-}
-
 .makeup_content div a ul {
     display: flex;
     flex-direction: column;
-    gap: 19px;
 }
 
-.makeup_content a ul li:nth-child(4){
+.makeup_content a ul li:nth-child(4) {
     font-weight: 500;
     font-size: 22px;
 }
 
-.makeup_left a ul li:nth-child(3) {
-    font-size: 40px;
+.makeup_left a ul {
+    gap: 20px;
 }
 
-.makeup_left a ul li:nth-child(4) {
-    font-size: 25px;
+.makeup_right a ul {
+    gap: 24px;
+}
+
+.makeup_left a ul li {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 43.2px */
+    letter-spacing: -0.72px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .makeup_left {
     width: 600px;
-    height: 766px;/* 있어야 sticky가 먹네 */
+    height: 766px;
+    /* 있어야 sticky가 먹네 */
     position: sticky;
     top: 0;
 }
@@ -240,6 +251,12 @@
     gap: 60px;
 }
 
+.makeup_right ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .makeupsmall img {
     width: 100%;
     height: auto;
@@ -248,10 +265,10 @@
 
 /* video */
 .video {
-    padding: var(--web-padding);
+    padding: 150px 0;
     display: flex;
     flex-direction: column;
-    gap: var(--web-title-gap);
+    gap: 120px;
     align-items: center;
     /* 가운데로 정렬~ */
 }
@@ -277,22 +294,22 @@
 
 .vid_contents .vid.vid_one {
     background: url(../img/video1.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .vid_contents .vid.vid_two {
     background: url(../img/video2.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .vid_contents .vid.vid_three {
     background: url(../img/video3.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .vid_contents .vid.vid_four {
     background: url(../img/video4.png)no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .vid a {
@@ -313,7 +330,7 @@
     z-index: 100;
     opacity: 0;
     transition: 0.3s;
-    color: var(--main-red);
+    color: var(--gold70);
 }
 
 
@@ -322,7 +339,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background:rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     opacity: 0;
     transition: 0.3s;
@@ -333,16 +350,15 @@
     height: 25%;
     border-top: 2px solid var(--w-color);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-style: normal;
+    line-height: 110%;
+    /* 38.5px */
     gap: 18px;
     transition: .3s;
     opacity: 1;
-}
-
-.vid a ul li:first-child {
-    width: 23%;
 }
 
 .vid a:hover>span {
@@ -353,17 +369,12 @@
     opacity: 1;
 }
 
-.vid a:hover ul{
+.vid a:hover ul {
     opacity: 0;
 }
 
-.vid a ul li {
-    padding-right: 18px;
-    border-right: 2px solid var(--w-color);
-}
-
 .vid a ul li:last-child {
-    border-right:0
+    border-right: 0
 }
 
 .vid a ul span {
@@ -373,11 +384,11 @@
 /* store */
 .store {
     width: 100%;
-    padding: var(--web-padding);
+    padding: 150px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--web-title-gap);
+    gap: 120px;
     overflow: hidden;
 }
 
