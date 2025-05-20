@@ -1480,6 +1480,21 @@
     gap: 28px;
 }
 
+.more_small ul li:first-child {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.more_small ul li img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.more_small:hover ul li img {
+    transform: scale(1.05);
+}
+
 
 /* celeb_video */
 .celeb_video {
