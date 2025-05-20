@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // 창 크기 변경 시에도 반응
     window.addEventListener('resize', handleAOS);
 
+    const chatBtn = document.querySelector(".chat");
+    const chatBot = document.querySelector(".chat_bot");
+
+    chatBtn.addEventListener("click", function () {
+        chatBot.classList.toggle("on");
+    });
+
     $('.ham').click(function () {
         $('.fix').toggleClass('on');
 

@@ -109,6 +109,14 @@
 }
 
 @media screen and (max-width: 375px) {
+    aside.up {
+        display: none;
+    }
+
+    aside.chat {
+        bottom: calc(77px + 2vw);
+    }
+
     .button_subs_wrapper {
         padding-bottom: 40px;
     }
