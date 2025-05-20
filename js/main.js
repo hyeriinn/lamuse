@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   /* 리스트들 하나씩 좌르륵 뜨게 하는 거 */
-  const fashionItems = document.querySelectorAll('.makeupsmall');
+  const fashionItems = document.querySelectorAll('.makeupsmall, .makeup_left');
 
   const observer6 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

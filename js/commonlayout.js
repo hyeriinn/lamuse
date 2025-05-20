@@ -109,6 +109,27 @@ document.addEventListener("DOMContentLoaded", function () {
         observer4.observe(item);
     });
 
+    /* 조회수 */
+    const topperItems = document.querySelectorAll('.toppersmall, .topper_left, .thumb_small');
+
+    const observer7 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 요소가 화면에 들어오면 클래스 추가
+                entry.target.classList.add('on');
+            } else {
+                // 요소가 화면에서 나가면 클래스 제거 (반복 애니메이션용)
+                entry.target.classList.remove('on');
+            }
+        });
+    }, {
+        threshold: 0.2 // 요소의 20%가 보여야 작동
+    });
+
+    topperItems.forEach(item => {
+        observer7.observe(item);
+    });
+
     /* trend 페이지 반응형별 효과 적용 */
     let currentMode = null; // 현재 적용된 모드 (desktop / mobile)
     let observer5 = null; // IntersectionObserver 참조용

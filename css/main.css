@@ -204,6 +204,17 @@
     gap: 20px;
 }
 
+.makeup_left {
+    opacity: 0;
+transform: scale(0.95);
+transition: all 0.6s ease;
+}
+
+.makeup_left.on {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .makeup_right a ul {
     gap: 24px;
 }

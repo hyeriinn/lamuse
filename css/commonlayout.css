@@ -586,6 +586,17 @@
     justify-content: space-between;
 }
 
+.topper_left {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease;
+}
+
+.topper_left.on {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .topper_content div a ul {
     display: flex;
     flex-direction: column;
@@ -609,6 +620,17 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+.toppersmall {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease;
+}
+
+.toppersmall.on {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* thumb */
@@ -646,6 +668,14 @@
 
 .thumb_small {
     padding-bottom: var(--list-padding-bottom);
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease;
+}
+
+.thumb_small.on {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .thumb_small a ul {
@@ -789,6 +819,29 @@
     width: 90%;
     border-bottom: 1px solid var(--w-color);
     padding: 20px 0px;
+    /* background: #ccc; */
+    position: relative;
+    transition: 0.6s;
+}
+
+.list .list_right ul li:hover {
+    border-bottom: 1px solid var(--main-red);
+}
+
+.list .list_right ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: var(--main-red);
+    left: 0;
+    bottom: -1px;
+    transition: 0.4s;
+
+}
+
+.list .list_right ul li:hover:after {
+    width: 100%;
 }
 
 .list .list_right ul li a {
