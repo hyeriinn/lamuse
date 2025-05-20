@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /* 조회수 */
-    const topperItems = document.querySelectorAll('.toppersmall, .topper_left, .thumb_small');
+    const topperItems = document.querySelectorAll('.toppersmall, .topper_left, .thumb_small, .thumb_big');
 
     const observer7 = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
