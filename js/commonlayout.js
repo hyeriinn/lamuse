@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     listItems.forEach(item => {
         observer.observe(item);
     });
-
+    /*  */
     const celebItems = document.querySelectorAll('.celebsmall');
 
     const observer2 = new IntersectionObserver((entries) => {
@@ -39,6 +39,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     celebItems.forEach(item => {
         observer2.observe(item);
+    });
+    /*  */
+    const subsItems = document.querySelectorAll('.subs_list_small');
+
+    const observer3 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 요소가 화면에 들어오면 클래스 추가
+                entry.target.classList.add('on');
+            } else {
+                // 요소가 화면에서 나가면 클래스 제거 (반복 애니메이션용)
+                entry.target.classList.remove('on');
+            }
+        });
+    }, {
+        threshold: 0.2 // 요소의 20%가 보여야 작동
+    });
+
+    subsItems.forEach(item => {
+        observer3.observe(item);
+    });
+
+    /*  */
+    const saleItems = document.querySelectorAll('.sale_wrap');
+
+    const observer4 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 요소가 화면에 들어오면 클래스 추가
+                entry.target.classList.add('on');
+            } else {
+                // 요소가 화면에서 나가면 클래스 제거 (반복 애니메이션용)
+                entry.target.classList.remove('on');
+            }
+        });
+    }, {
+        threshold: 0.2 // 요소의 20%가 보여야 작동
+    });
+
+    saleItems.forEach(item => {
+        observer4.observe(item);
     });
 
     /* 필터 */
