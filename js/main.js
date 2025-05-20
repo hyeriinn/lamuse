@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   }
 
-  applySimplyScroll('.interaction .txtAni');
+  applySimplyScroll('.interaction .txtAniBox');
 
   let store_top = new Swiper('.store_top', {
     loop: true,
