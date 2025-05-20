@@ -393,7 +393,7 @@ h6 {
 
 .chat_bot.on {
     opacity: 1;
-    bottom: calc(231px + 2vw);
+    bottom: calc(175px + 2vw);
     z-index: 100;
 }
 
@@ -527,13 +527,13 @@ aside {
 }
 
 aside.chat {
-    bottom: calc(154px + 2vw);
+    bottom: calc(105px + 2vw);
     /* 반응형 조정 */
     cursor: pointer;
 }
 
 aside.up {
-    bottom: calc(77px + 2vw);
+    bottom: calc(35px + 2vw);
     /* 반응형 조정 */
 }
 
