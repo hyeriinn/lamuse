@@ -1,4 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    /* 리스트들 하나씩 좌르륵 뜨게 하는 거 */
+    const listItems = document.querySelectorAll('.list_small');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 요소가 화면에 들어오면 클래스 추가
+                entry.target.classList.add('on');
+            } else {
+                // 요소가 화면에서 나가면 클래스 제거 (반복 애니메이션용)
+                entry.target.classList.remove('on');
+            }
+        });
+    }, {
+        threshold: 0.2 // 요소의 20%가 보여야 작동
+    });
+
+    listItems.forEach(item => {
+        observer.observe(item);
+    });
+
+    const celebItems = document.querySelectorAll('.celebsmall');
+
+    const observer2 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 요소가 화면에 들어오면 클래스 추가
+                entry.target.classList.add('on');
+            } else {
+                // 요소가 화면에서 나가면 클래스 제거 (반복 애니메이션용)
+                entry.target.classList.remove('on');
+            }
+        });
+    }, {
+        threshold: 0.2 // 요소의 20%가 보여야 작동
+    });
+
+    celebItems.forEach(item => {
+        observer2.observe(item);
+    });
+
+    /* 필터 */
     const langTriggers = document.querySelectorAll('.filter p');
 
     langTriggers.forEach(p => {

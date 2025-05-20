@@ -470,6 +470,14 @@
 
 .celebsmall {
     padding-bottom: var(--list-padding-bottom);
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.6s ease;
+}
+
+.celebsmall.on {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .celebsmall img {
@@ -694,6 +702,14 @@
 
 .list_contents .list_small {
     padding-bottom: 80px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.6s ease;
+}
+
+.list_contents .list_small.on {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .list_contents .list_small a ul {
