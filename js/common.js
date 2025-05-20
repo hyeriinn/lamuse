@@ -1,22 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
 
-    function handleAOS() {
-        if (window.innerWidth < 1024) {
-            // 작은 화면일 경우 AOS 제거
-            AOS.init({ disable: true });
-        } else {
-            // 일반적으로 AOS 작동
-            AOS.init();
-        }
-    }
-
-    // 초기 실행
-    handleAOS();
-
-    // 창 크기 변경 시에도 반응
-    window.addEventListener('resize', handleAOS);
-
     const chatBtn = document.querySelector(".chat");
     const chatBot = document.querySelector(".chat_bot");
 

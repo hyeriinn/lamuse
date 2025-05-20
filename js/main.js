@@ -64,6 +64,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  /* 리스트들 하나씩 좌르륵 뜨게 하는 거 */
+  const fashionItems = document.querySelectorAll('.makeupsmall');
+
+  const observer6 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // 요소가 화면에 들어오면 클래스 추가
+        entry.target.classList.add('on');
+      } else {
+        // 요소가 화면에서 나가면 클래스 제거 (반복 애니메이션용)
+        entry.target.classList.remove('on');
+      }
+    });
+  }, {
+    threshold: 0.2 // 요소의 20%가 보여야 작동
+  });
+  fashionItems.forEach(item => {
+    observer6.observe(item);
+  });
+
   // 심플리 스크롤 적용
   applySimplyScroll('.interaction .txtAniBox');
 });

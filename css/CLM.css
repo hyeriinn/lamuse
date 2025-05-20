@@ -189,6 +189,14 @@
 
     .list .list_right ul li {
         width: 100%;
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.6s ease;
+    }
+
+    .list_right ul li.on {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .list_img {

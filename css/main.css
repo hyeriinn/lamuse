@@ -244,6 +244,17 @@
     gap: 8px;
 }
 
+.makeupsmall {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease;
+}
+
+.makeupsmall.on {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .makeupsmall img {
     width: 100%;
     height: auto;
@@ -341,8 +352,8 @@
 }
 
 .vid a:hover ul li {
-        bottom: 25%;
-        
+    bottom: 25%;
+
 }
 
 .vid a ul span {
