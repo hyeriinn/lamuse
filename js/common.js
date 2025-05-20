@@ -1,6 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
 
+    function handleAOS() {
+        if (window.innerWidth < 1024) {
+            // 작은 화면일 경우 AOS 제거
+            AOS.init({ disable: true });
+        } else {
+            // 일반적으로 AOS 작동
+            AOS.init();
+        }
+    }
+
+    // 초기 실행
+    handleAOS();
+
+    // 창 크기 변경 시에도 반응
+    window.addEventListener('resize', handleAOS);
+
     $('.ham').click(function () {
         $('.fix').toggleClass('on');
 
@@ -26,15 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-/*     $('nav ul.gnb>li').hover(function () {
-        $('ul.sub').stop().slideDown();
-    }, function () {
-        $('ul.sub').stop().slideUp();
-    });한번에 내려오는 거 */
+    /*     $('nav ul.gnb>li').hover(function () {
+            $('ul.sub').stop().slideDown();
+        }, function () {
+            $('ul.sub').stop().slideUp();
+        });한번에 내려오는 거 */
 
-        $('nav ul.gnb>li').hover(function(){
+    $('nav ul.gnb>li').hover(function () {
         $(this).find('ul.sub').stop().slideDown();
-    },function(){
+    }, function () {
         $(this).find('ul.sub').stop().slideUp();
     });
 });
