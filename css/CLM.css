@@ -413,6 +413,18 @@
         /* 임시 */
     }
 
+    .product_small a ul li.light_font {
+        font-size: 17px;
+    }
+
+    .product_small a ul li.light_font span {
+        font-size: 19px;
+    }
+
+    .product_small a ul li.light_font .two {
+        display: none;
+    }
+
 
     /* subsub */
     .subsub_title {
@@ -430,6 +442,10 @@
     }
 
     /* more */
+    .more {
+        padding-bottom: 90px;
+    }
+
     .more_contents img {
         width: 100%;
         height: auto;
@@ -442,7 +458,7 @@
     }
 
     .more_small ul {
-        gap: 24px;
+        gap: 15px;
     }
 
     /* celeb_video */
@@ -1060,6 +1076,10 @@
 
 
     /* more */
+    .more {
+        padding-bottom: 70px;
+    }
+
     .more_title {
         font-size: 24px;
         font-style: normal;
@@ -1077,7 +1097,7 @@
     }
 
     .more_small ul {
-        gap: 22px;
+        gap: 10px;
     }
 
     /* celeb_video */

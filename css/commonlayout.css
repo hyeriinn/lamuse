@@ -1089,7 +1089,11 @@
 
 .sub_text_v3_small ul li:nth-child(2) {
     padding-top: 28px;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
+}
+
+.sub_text_v3_small ul li .body_article {
+    font-size: 22px;
 }
 
 .sub_text_v3_small ul li span {
@@ -1550,9 +1554,20 @@
     /* 임시 */
 }
 
+.product_small a ul li.light_font {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product_small a ul li.light_font span {
+    font-size: 22px;
+}
+
 /* more */
 .more {
-    padding: var(--web-padding);
+    padding-top: clamp(40px, 3vw + 10px, 80px);
+    padding-bottom: 160px;
     display: flex;
     flex-direction: column;
     gap: var(--web-title-gap);
@@ -1576,7 +1591,7 @@
 .more_small ul {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 18px;
 }
 
 .more_small ul li:first-child {

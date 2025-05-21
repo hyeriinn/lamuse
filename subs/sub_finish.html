@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="../css/common_media.css">
     <link rel="stylesheet" href="../css/commonlayout.css">
     <link rel="stylesheet" href="../css/CLM.css">
-    <link rel="stylesheet" href="../css/subs.css">
-    <link rel="stylesheet" href="../css/subs_media.css">
+    <link rel="stylesheet" href="../css/subs_finish.css">
+    <link rel="stylesheet" href="../css/subs_finish_media.css">
 
     <!-- AOS js -->
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
@@ -206,117 +206,43 @@
     </nav>
     <div class="inner con">
         <div class="container">
-            <div class="order_contents">
-                <section class="order order_product">
-                    <div class="order_product_title">
-                        <h6 class="order">주문상품</h6>
-                    </div><!-- //.order_product_title -->
-                    <div class="order_product_img">
-                        <img src="../img/picture10.png" alt="2024년 9월호 라뮤즈 잡지">
-                        <p>2024년 9월호 라뮤즈 잡지</p>
-                    </div><!-- //.order_product_img -->
-                </section><!-- //.order_product -->
-                <section class="order order_personal_info">
-                    <div class="order_product_title">
-                        <h6 class="order">주문자 정보</h6>
-                    </div><!-- //.order_product_title -->
-                    <div class="order_name">
-                        <label for="username">보내는 분</label>
-                        <input type="text"  name="username" required>
-                    </div><!-- //.order_name -->
-                    <div class="order_phone">
-                        <label for="userphone">연락처</label>
-                        <input type="text" name="userphone" required>
-                        <p>이메일을 통해 주문처리과정을 보내드립니다. <br>
-                            정보변경은 내정보 > 개인정보에서 가능합니다.</p>
-                    </div><!-- //.order_phone -->
-                </section><!-- //.order_personal_info -->
-                <section class="order order_shipping">
-                    <div class="order_product_title">
-                        <h6 class="order">배송 정보</h6>
-                    </div><!-- //.order_product_title -->
-                    <div class="order_shipping_address">
-                        <div class="order_shipping_input">
-                            <label for="order_shipping_label">배송지</label>
-                            <div class="address_input_left">
-                                <input type="text" name="order_shipping_label" class="address_search input_padding" placeholder="주소를 입력해주세요.">
-                                <button type="button">검색</button>
-                            </div><!-- //.address_input_left -->
-                        </div><!-- //.order_shipping_input -->
-                        <input type="text" name="order_shipping_label" class="address_detail input_padding" placeholder="상세주소를 입력해주세요.">
-                    </div><!-- //.order_shipping_address -->
-                    <div class="order_shipping_require">
-                        <label for="order_shipping_require_label">요청사항</label>
-                        <div class="order_shipping_require_input">
-                            <select name="require" id="shipping_require">
-                                <option value="require1">문앞에 놔주세요.</option>
-                                <option value="require2">부재시 경비실에 맡겨주세요.</option>
-                                <option value="require3">부재시 문앞에 맡겨주세요</option>
-                                <option value="require4">배송 전 연락주세요.</option>
-                                <option value="require5">택배함에 넣어주세요.</option>
-                            </select>
-                            <input type="text" name="order_shipping_require_label" class="input_padding"  placeholder="상세주소를 입력해주세요.">
-                        </div><!-- //.order_shipping_input -->
-                    </div><!-- //.order_shipping_require -->
-                </section><!-- //order_shipping -->
-                <section class="order order_payment">
-                    <div class="order_product_title">
-                        <h6 class="order">결제 수단</h6>
-                    </div><!-- //.order_product_title -->
-                    <div class="payment_methods">
-                        <p>결제수단 선택</p>
-                        <div class="payment_select">
-                            <label for="naverpay" class="payment_select_label">
-                                <input type="radio" id="naverpay" name="payment" class="payment_select_input"
-                                    value="naverpay">
-                                네이버페이</label>
-                            <label for="kakaopay" class="payment_select_label">
-                                <input type="radio" class="payment_select_input" id="kakaopay" name="payment"
-                                    value="kakaopay">
-                                카카오페이</label>
-                            <label for="creditcard" class="payment_select_label">
-                                <input type="radio" class="payment_select_input" id="creditcard" name="payment"
-                                    value="creditcard">
-                                신용카드</label>
-                        </div><!-- //.payment_select -->
-                    </div>
-                </section><!-- //.order_payment -->
-            </div><!-- //.order_contents -->
-            <div class="order_right">
-                <div class="order_sticky" id="order_sticky">
-                    <div class="order_final">
-                        <h6 class="order_price">
-                            결제 금액
-                        </h6><!-- //.order_price -->
-                        <ul class="order_final_info">
-                            <li>
-                                <p>주문금액</p>
-                                <span>13,000원</span>
-                            </li>
-                            <li>
-                                <p>배송비</p>
-                                <span>0원</span>
-                            </li>
-                            <li>
-                                <p>최종 결제금액</p>
-                                <span>13,000원</span>
-                            </li>
-                        </ul>
-                        <div class="order_final_agree">
-                            <label for="order_agree" class="custom_checkbox">
-                                <input type="checkbox" id="order_agree" name="order_agree">
-                                <span class="checkmark"></span>
-                                주문 상품정보 및 결제대행 서비스 이용약관에 <br>
-                                모두 동의하십니까?
-                            </label>
-                        </div><!-- //.order_final_agree -->
-                    </div><!-- //.order_final -->
-                    <div class="order_final_btn">
-                        <a href="sub_finish.html">13,000원 결제하기</a>
-                    </div><!-- //.order_final_btn -->
-                </div>
-            </div>
-        </div>
+            <div class="subs_finish_inner">
+                <div class="check_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
+                        <path
+                            d="M30.1871 43.8437C29.6324 43.8013 29.1163 43.5433 28.7496 43.125L20.1246 34.5C19.9324 34.0976 19.8697 33.6456 19.9451 33.2061C20.0205 32.7666 20.2303 32.3613 20.5456 32.046C20.8609 31.7307 21.2662 31.5209 21.7057 31.4455C22.1452 31.3701 22.5972 31.4328 22.9996 31.625L30.1008 38.7262L54.6246 14.375C56.4314 13.5121 58.3306 15.51 57.4996 17.25L31.6246 43.125C31.2578 43.5433 30.7418 43.8013 30.1871 43.8437Z"
+                            fill="#FAFAFA" />
+                        <path
+                            d="M34.5018 60.375C29.8772 60.3676 25.3392 59.1209 21.3599 56.7647C17.3807 54.4085 14.1056 51.0288 11.8755 46.9775C10.1827 43.9577 9.13519 40.6194 8.79928 37.1738C8.2731 32.1197 9.24665 27.0227 11.5985 22.5183C13.9504 18.014 17.5764 14.3019 22.0243 11.845C25.0441 10.1522 28.3824 9.10467 31.828 8.76876C35.2612 8.40267 38.733 8.73517 42.0343 9.74626C42.3288 9.80512 42.6079 9.92487 42.8535 10.0978C43.099 10.2708 43.3058 10.4932 43.4604 10.7507C43.615 11.0083 43.7142 11.2953 43.7514 11.5933C43.7887 11.8914 43.7632 12.194 43.6767 12.4816C43.5902 12.7693 43.4446 13.0357 43.2491 13.2638C43.0536 13.4919 42.8127 13.6766 42.5416 13.8062C42.2706 13.9357 41.9755 14.0072 41.6753 14.016C41.375 14.0249 41.0762 13.9709 40.798 13.8575C38.0056 13.0163 35.0729 12.7425 32.173 13.0525C29.3062 13.3437 26.5283 14.2142 24.008 15.6113C21.579 16.9513 19.4314 18.7475 17.683 20.9013C15.8829 23.0953 14.5386 25.6266 13.729 28.3467C12.9194 31.0668 12.6607 33.9211 12.968 36.7425C13.2592 39.6094 14.1297 42.3872 15.5268 44.9075C16.8668 47.3365 18.663 49.4841 20.8168 51.2325C23.0109 53.0327 25.5421 54.3769 28.2622 55.1865C30.9823 55.9961 33.8367 56.2549 36.658 55.9475C39.5249 55.6563 42.3027 54.7858 44.823 53.3888C47.252 52.0487 49.3996 50.2525 51.148 48.0988C52.9482 45.9047 54.2924 43.3734 55.102 40.6533C55.9117 37.9332 56.1704 35.0789 55.863 32.2575C55.8058 31.6589 55.9888 31.0622 56.3716 30.5985C56.7544 30.1348 57.3057 29.8422 57.9043 29.785C58.5028 29.7278 59.0996 29.9108 59.5633 30.2936C60.027 30.6764 60.3196 31.2277 60.3768 31.8263C60.9003 36.8833 59.9224 41.9825 57.5653 46.4871C55.2082 50.9917 51.5762 54.7021 47.123 57.155C44.0711 58.9171 40.6812 60.0144 37.1755 60.375H34.5018Z"
+                            fill="#FAFAFA" />
+                    </svg>
+                </div><!-- //.check_icon -->
+                <h6 class="subs_finish_title">
+                    이용권 구매 완료
+                </h6>
+                <ul class="subs_finish_info">
+                    <li>
+                        <p>주문 번호</p>
+                        <span>1234567890</span>
+                    </li>
+                    <li>
+                        <p>결제 금액</p>
+                        <span>13,000원</span>
+                    </li>
+                    <li>
+                        <p>결제 수단</p>
+                        <span>신용카드</span>
+                    </li>
+                    <li>
+                        <p>이용 기간</p>
+                        <span>2025.05.02 - 2025.06.02</span>
+                    </li>
+                </ul>
+                <div class="sub_finish_btn">
+                    <a href="../index.html">확인</a>
+                </div><!-- //.sub_finish_btn -->
+            </div><!-- //.subs_finish_inner -->
+        </div><!-- //. container-->
     </div><!-- //.container -->
     <footer id="stop-point">
         <div class="f_contents inner">
