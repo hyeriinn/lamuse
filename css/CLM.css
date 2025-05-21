@@ -312,6 +312,10 @@
         white-space: nowrap;
     }
 
+    .compare_group ul li .light_font span {
+        font-size: 23px;
+    }
+
     /* subs_cate */
     .subs_cate {
         gap: 50px;
@@ -940,6 +944,9 @@
         padding-bottom: 16px;
     }
 
+    .compare_group ul li .light_font span {
+        font-size: 18px;
+    }
 
     /* subs_cate */
     .subs_cate {
