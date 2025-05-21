@@ -148,6 +148,7 @@ body {
     position: relative;
     background: var(--main-font);
     font-family: var(--Pretendard);
+    line-height: 1.3;
 }
 
 div img {
@@ -706,6 +707,10 @@ nav .inner {
     display: flex;
     gap: 16px;
     height: 48px;
+}
+
+.nav_right a.login {
+    align-self: center;
 }
 
 .nav_middle {
