@@ -695,6 +695,7 @@ nav .inner {
     align-items: center;
     /* background: #ccc; */
     font-size: 15px;
+    padding-top: 10px;
 }
 
 .nav_top .nav_left {

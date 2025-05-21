@@ -1,13 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
 
-    const chatBtn = document.querySelector(".chat");
-    const chatBot = document.querySelector(".chat_bot");
-
-    chatBtn.addEventListener("click", function () {
-        chatBot.classList.toggle("on");
-    });
-
     $('.ham').click(function () {
         $('.fix').toggleClass('on');
 
