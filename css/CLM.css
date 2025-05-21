@@ -292,6 +292,10 @@
         white-space: nowrap;
     }
 
+    .muse_tip .body_article span {
+        font-size: 22px;
+    }
+
     /* compare */
     .compare img {
         width: 381px;
@@ -402,7 +406,9 @@
 
     .banner .bannerimg::after {
         opacity: 0;
-    }/* 태블릿은 호버상황없기때문 */
+    }
+
+    /* 태블릿은 호버상황없기때문 */
 
     /* product_info */
     .product_info img {
@@ -913,6 +919,10 @@
     /* muse_tip */
     .muse_tip {
         flex-direction: column;
+    }
+
+    .muse_tip .body_article span {
+        font-size: 17px;
     }
 
     /* compare */
