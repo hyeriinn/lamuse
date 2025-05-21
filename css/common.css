@@ -801,8 +801,8 @@ nav .inner {
 }
 
 .nav_bottom ul.gnb>li {
-    padding-left: 65px;
-    padding-right: 65px;
+/*     padding-left: 65px;
+    padding-right: 65px; */
     height: 100%;
     display: flex;
     position: relative;
@@ -815,6 +815,8 @@ nav .inner {
     display: flex;
     align-items: center;
     justify-content: center;
+        padding-left: 65px;
+    padding-right: 65px;
 }
 
 .nav_bottom ul.gnb>li::after {
