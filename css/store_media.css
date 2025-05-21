@@ -40,7 +40,7 @@
     .store_filter .filter_list .store_filter_head {
         font-size: 18px;
         width: 180px;
-        padding: 20px;
+        padding: 0 20px;
     }
 
     .store_filter .filter_list .store_filter_head h6 {
@@ -50,7 +50,9 @@
     .custom_checkbox {
         font-size: 18px;
     }
-
+    .store_filter .filter_list .store_filter_head span {
+        font-size: 36px;
+    }
 
     .store_contents article ul li {
         width: 432px;
@@ -80,21 +82,53 @@
         gap: 0;
         /* background: #ccc; */
         flex-wrap: wrap;
-
+        display: flex;
     }
 
-    .store_filter .filter_list {
+    /* .store_filter .filter_list {
         width: 50%;
-        height: 50px;
+        height: auto;
         flex: none;
-    }
+    } */
 
-
+/* 
     .store_filter .filter_list>ul {
         display: none;
-    }
+    } */
 
-    .store_filter .filter_list .store_filter_head {
+      .store_filter .filter_list {
+        width: 50%;
+    height: auto; /* ✅ 자식 요소 높이에 맞게 컨테이너 자동 확장 */
+  }
+
+  .store_filter_head {
+    height: 50px; /* ✅ 고정 유지 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 20px;
+  }
+
+  .store_filter_js {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .store_filter_js.open {
+    max-height: 1000px;
+  }
+
+  .store_filter_head .material-symbols-outlined {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .store_filter_head.active .material-symbols-outlined {
+    transform: rotate(0deg);
+  }
+ /*    .store_filter .filter_list .store_filter_head {
         width: 100%;
         height: 100%;
         padding: 0 20px;
@@ -102,7 +136,7 @@
         align-items: center;
         justify-content: space-between;
     }
-
+ */
     .store_filter .filter_list .store_filter_head h6 {
         white-space: nowrap;
         font-size: 16px;

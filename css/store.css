@@ -56,7 +56,7 @@
 
 .store_filter {
     width: 376px;
-    height: 730px;
+    height: 860px;
     /* background: #ccc; */
     border-left: 1px solid var(--w-color);
     display: flex;
@@ -66,6 +66,34 @@
 .cosmetic_list {
     display: none;
 }
+.filter_list ul{
+    display: none;
+}
+
+.filter_list .store_filter_js{
+    display: block;
+}
+
+.store_filter_js {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s linear;
+  padding: 0 0;
+}
+
+.store_filter_js.open {
+  max-height: 500px; /* 충분히 큰 값 */
+  padding: 10px 0;
+}
+
+.store_filter_head .material-symbols-outlined {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg); /* 초기 상태는 180도 회전 */
+}
+
+.store_filter_head.active .material-symbols-outlined {
+  transform: rotate(0deg); /* 열릴 때 정방향 */
+}
 
 .store_filter .filter_list .store_filter_head{
     font-size: 28px;
@@ -74,10 +102,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
+.filter_list ul li:hover{
+    background: var(--grey90);
+}
 .store_filter .filter_list .store_filter_head>h6 {
-    
+    font-size: 28px;
 }
 
 
@@ -99,11 +131,16 @@
     margin-bottom: 10px;
     position: relative;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 200;
     user-select: none;
     padding: 8px 20px;
 }
+
+.custom_checkbox:hover{
+    font-weight: 500;
+}
+
 
 .custom_checkbox .checkmark {
     display: inline-block;
