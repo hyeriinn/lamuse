@@ -1571,6 +1571,12 @@ span.question {
     gap: 10px;
 }
 
+.product_small a ul li.light_font {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .product_small a ul li .top {
     display: flex;
     flex-direction: column;

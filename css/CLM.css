@@ -271,6 +271,11 @@
         padding-bottom: 5px;
     }
 
+    .sub_text_v3_small ul li .body_article {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
     /* sub_text_v4 */
     .sub_text_v4 img {
         width: 100%;
@@ -897,6 +902,10 @@
     .sub_text_v3_small ul li:nth-child(2) {
         padding-top: 12px;
         padding-bottom: 5px;
+    }
+
+    .sub_text_v3_small ul li .body_article {
+        font-size: 15px;
     }
 
     /* sub_text_v4 */

@@ -61,6 +61,10 @@
         font-size: 22px;
     }
 
+    .light_font_b.txt span {
+        font-size: 26px;
+    }
+
     .nav_top {
         display: none;
     }
@@ -204,7 +208,13 @@
         letter-spacing: -0.32px;
     }
 
+    .light_font_b.txt {
+        font-size: 18px;
+    }
 
+    .light_font_b.txt span {
+        font-size: 21px;
+    }
 
     .by {
         font-size: 14px;
