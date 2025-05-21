@@ -417,6 +417,10 @@
         /* 임시 */
     }
 
+    .product_small a ul li.second {
+        gap: 8px;
+    }
+
     .product_small a ul li.light_font {
         font-size: 17px;
     }
@@ -1076,6 +1080,10 @@
     .product_small {
         width: 100%;
         padding-bottom: 40px;
+    }
+
+    .product_small a ul li .bottom span {
+        font-size: 16px;
     }
 
 
