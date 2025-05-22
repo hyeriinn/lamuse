@@ -577,6 +577,11 @@ aside.up a {
     background: var(--footer);
     z-index: 100;
     opacity: 0;
+    overflow: hidden;
+}
+
+.fix::-webkit-scrollbar {
+    display: none; 
 }
 
 .fix .logo {
@@ -597,7 +602,7 @@ aside.up a {
     /* gnb의 자식이 ul 하나뿐이니까 가운데정렬하려고 플렉스 적용 */
     justify-content: center;
     align-items: flex-start;
-    padding-top: 5%;
+    padding-top: 61px;
 }
 
 .fix .gnb>ul {
@@ -901,8 +906,8 @@ nav .inner {
 .nv_right .ham span {
     font-size: 40px;
     position: absolute;
-    left: 50%;
-    top: 50%;
+/*     left: 50%;
+    top: 50%; */
     transform: translate(-50%, -50%);
 }
 
@@ -912,9 +917,10 @@ nav .inner {
     transition: opacity 0.3s ease;
 }
 
-.ham .x {
+.nv_right .ham .x {
     opacity: 0;
     transition: opacity 0.3s ease;
+    position: fixed;
 }
 
 .search {
