@@ -995,7 +995,8 @@
     gap: 40px;
     /* 임시 */
     /* width: clamp(360px, 0.585vw, 600px); */
-    align-items: center;
+    align-items: flex-start;
+    
     /* background: rgb(107, 107, 107); */
 }
 
@@ -1007,6 +1008,7 @@
 
 .sub_text.left .sub_text_body {
     justify-content: space-between;
+    text-align: end;
 }
 
 .sub_text .tip {
