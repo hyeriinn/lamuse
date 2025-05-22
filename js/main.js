@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       loop: shouldLoop('.main_visual', 1),
       simulateTouch: true,
+      speed: 800,  // 1초 동안 부드럽게 움직임
     });
 
     new Swiper(".mon_skincare", {
@@ -37,9 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
       centeredSlides: false,
       initialSlide: 0,
       autoplay: {
-        delay: 2500,
+        delay: 2000,
         disableOnInteraction: false,
       },
+      speed: 1000,
     });
 
     new Swiper('.store_top', {
