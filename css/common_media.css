@@ -107,6 +107,60 @@
 
 }
 
+@media screen and (max-width: 584px) {
+    .fix {
+        flex-direction: column;
+    }
+
+    .fix .sns {
+        display: flex;
+    }
+
+    .fix .search {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 77px;
+    }
+
+    .fix .gnb {
+        width: 100%;
+    }
+
+    .fix .gnb>ul {
+        width: 90%;
+        position: relative;
+    }
+
+    .fix .gnb>ul>li {
+        width: 100%;
+        /* background: orange; */
+        height: 20%;
+        border-bottom: 1px solid var(--w-color);
+    }
+
+    .fix .gnb>ul>li>a {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .fix .gnb>ul>li>ul.sub {
+        display: none;
+    }
+
+    .fix .us {
+        display: flex;
+        position: absolute;
+        left: 5%;
+        bottom: 11%;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+
+    .fix.on .us {
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width: 475px) {
     footer .top {
         display: none;
@@ -215,59 +269,6 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-    }
-
-    .fix {
-        flex-direction: column;
-    }
-
-    .fix .sns {
-        display: flex;
-    }
-
-
-    .fix .search {
-        display: flex;
-        margin: 0 auto;
-        margin-top: 77px;
-    }
-
-    .fix .gnb {
-        width: 100%;
-    }
-
-    .fix .gnb>ul {
-        width: 90%;
-        position: relative;
-    }
-
-    .fix .gnb>ul>li {
-        width: 100%;
-        /* background: orange; */
-        height: 20%;
-        border-bottom: 1px solid var(--w-color);
-    }
-
-    .fix .gnb>ul>li>a {
-        font-size: 20px;
-        width: 100%;
-    }
-
-    .fix .gnb>ul>li>ul.sub {
-        display: none;
-    }
-
-    .fix .us {
-        display: flex;
-        position: absolute;
-        left: 5%;
-        bottom: 11%;
-        transform: translateY(100px);
-        transition: 1s;
-    }
-
-    .fix.on .us {
-        transform: translateY(0);
     }
 
     footer .f_middle {

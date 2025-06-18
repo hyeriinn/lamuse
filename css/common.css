@@ -188,7 +188,7 @@ h3 {
 }
 
 h4 {
-    font-size: clamp(30px, 3.6vw, 55px);
+    font-size: clamp(35px, 5vw, 55px);
     font-family: var(--DM);
     font-style: italic;
 
@@ -619,8 +619,9 @@ aside.up a {
     transition: 0.3s;
     /* transition-delay: 0.2s; */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: clamp(6px, 1vw, 10px);
     padding: 10px 0;
 }
 
