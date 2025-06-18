@@ -24,11 +24,11 @@
 
     .makeup_right {
         width: 100%;
-        gap: 24px;
+        /* gap: 24px; */
     }
 
     .makeupsmall {
-        padding-bottom: 48px;
+        padding-bottom: clamp(24px, 5vw, 48px);
     }
 
     .makeupsmall.no {

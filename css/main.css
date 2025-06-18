@@ -251,13 +251,13 @@
     /* background: red; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: clamp(24px, 4vw, 50px);
 }
 
 .makeup_right ul li {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: clamp(4px, 1.5vw, 8px);
 }
 
 .makeupsmall {
