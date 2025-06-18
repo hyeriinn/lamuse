@@ -76,7 +76,7 @@
 /* skincare */
 .skincare {
     padding-top: clamp(120px, 40vw, 387px);
-    padding-bottom: clamp(60px, 20vw, 150px);
+    padding-bottom: var(--padding);
     display: flex;
     gap: var(--web-title-gap);
     align-items: flex-end;
@@ -179,10 +179,11 @@
 
 /* makeup */
 .makeup {
-    padding: 150px 0;
+    padding-top: clamp(120px, 20vw, 200px);
+    padding-bottom: var(--padding);
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: var(--article-padding);
     align-items: center;
     /* background: green; */
 }
@@ -191,6 +192,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: clamp(12px, 3vw, 20px);
 }
 
 .makeup_content div a ul {
@@ -200,11 +202,11 @@
 
 .makeup_content a ul li:nth-child(4) {
     font-weight: 500;
-    font-size: 22px;
+    font-size: clamp(16px, 2.2vw, 22px);
 }
 
 .makeup_left a ul {
-    gap: 20px;
+    gap: clamp(12px, 3vw, 20px);
 }
 
 .makeup_left {
@@ -219,11 +221,11 @@
 }
 
 .makeup_right a ul {
-    gap: 24px;
+    gap: clamp(10px, 1.5vw, 20px);
 }
 
 .makeup_left a ul li {
-    font-size: 36px;
+    font-size: clamp(24px, 3vw, 36px);
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -231,11 +233,11 @@
     letter-spacing: -0.72px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: clamp(8px, 2vw, 12px);
 }
 
 .makeup_left {
-    width: 600px;
+    width: clamp(320px, 60vw, 600px);
 }
 
 .makeup_left a {
@@ -269,7 +271,7 @@
     transform: scale(1);
 }
 
-.makeupsmall img {
+.makeup img {
     width: 100%;
     height: auto;
     display: block;
