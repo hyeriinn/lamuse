@@ -172,7 +172,7 @@ img {
 /* h1은 로고임~ */
 
 h2 {
-    font-size: 240px;
+    font-size: clamp(96px, 12vw, 240px);
     font-family: var(--DM);
     color: var(--grey80);
 }
@@ -375,9 +375,10 @@ h6 {
 }
 
 .inner {
-    width: clamp(343px, 50vw, 1570px);
+    width: clamp(343px, 90vw, 1570px);
     /* 모바일 343px, 웹 1570px 사이 동적 조정 */
     margin: 0 auto;
+    background: #ccc;
     /* padding: 0 20px; */
     /* background: #ccc; */
 }
