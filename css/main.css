@@ -179,7 +179,7 @@
 
 /* makeup */
 .makeup {
-    padding-top: clamp(120px, 20vw, 200px);
+    padding-top: var(--padding2);
     padding-bottom: var(--padding);
     display: flex;
     flex-direction: column;
@@ -283,12 +283,11 @@
 
 /* video */
 .video {
-    padding: 150px 0;
+    padding: var(--padding) 0;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: var(--article-padding);
     align-items: center;
-    /* 가운데로 정렬~ */
 }
 
 .vid_contents {
@@ -299,34 +298,34 @@
 
 
 .vid_contents .vidboth {
-    width: calc(50% - 36px);
+    width: calc(50% - clamp(24px, 3vw, 36px));
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: clamp(24px, 3vw, 36px);
 }
 
 .vid_contents .vid {
-    height: 491px;
+    height: clamp(300px, 30vw, 491px);
     border-radius: 10px;
 }
 
 .vid_contents .vid.vid_one {
-    background: url(../img/main_img11.png)no-repeat center center;
+    background: url(../img/main_img11.png) no-repeat center center;
     background-size: cover;
 }
 
 .vid_contents .vid.vid_two {
-    background: url(../img/main_img12.png)no-repeat center center;
+    background: url(../img/main_img12.png) no-repeat center center;
     background-size: cover;
 }
 
 .vid_contents .vid.vid_three {
-    background: url(../img/main_img13.png)no-repeat center center;
+    background: url(../img/main_img13.png) no-repeat center center;
     background-size: cover;
 }
 
 .vid_contents .vid.vid_four {
-    background: url(../img/main_img14.png)no-repeat center center;
+    background: url(../img/main_img14.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -340,13 +339,13 @@
 }
 
 .vid a ul {
-    width: 80%;
+    width: 85%;
     height: 16%;
     border-top: 1px solid var(--w-color);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 35px;
+    font-size: clamp(22px, 1.3vw, 35px);
     font-style: normal;
     line-height: 110%;
     /* 38.5px */
@@ -383,14 +382,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 120px;
+    gap: var(--article-padding);
     overflow: hidden;
 }
 
 .store_slide {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: clamp(24px, 3vw, 36px);
     overflow: hidden;
 }
 
@@ -461,5 +460,5 @@
 
 .interaction .txtAniBox .txtAni li {
     margin-right: 30px;
-    font-size: 36px;
+    font-size: clamp(24px, 3vw, 36px);
 }
