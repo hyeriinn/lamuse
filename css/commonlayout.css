@@ -228,12 +228,18 @@
 }
 
 .mp_table ul li {
-    width: 250px;
+    width: 200px;
+    height: 84px;
     display: flex;
     justify-content: center;
-    height: 84px;
     align-items: center;
+    text-align: center;
+
+    /* 줄바꿈 없음 */
 }
+
+
+
 
 .mp_right .mp_subs {
     width: 100%;
@@ -296,11 +302,12 @@
 .mp_divide {
     width: 100%;
     padding: 40px 0;
+    overflow: hidden;
 }
 
 .mp_divide ul {
     display: flex;
-    gap: 46px;
+    gap: 40px;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -996,7 +1003,7 @@
     /* 임시 */
     /* width: clamp(360px, 0.585vw, 600px); */
     align-items: flex-start;
-    
+
     /* background: rgb(107, 107, 107); */
 }
 
@@ -1685,4 +1692,54 @@ span.question {
     cursor: pointer;
     scale: 1;
     transition: 0.4s;
+}
+
+@media screen and (max-width: 1024px) {
+    .mp_divide ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+
+
+    .mp_right .mp_profile ul li .first .subs_list {
+        width: 120px;
+    }
+
+    .mp_right .mp_profile{
+        width: 100%;
+    }
+
+    .mp_tables{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .mp_tables {
+        width: 100%;
+    }
+
+    .mp_right .mp_profile {
+        width: 100%;
+    }
+
+    .mp_table ul li {
+        width: 120px;
+    }
+
+    .mp_table ul li p {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+
+
 }
