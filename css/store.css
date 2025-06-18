@@ -48,7 +48,6 @@
 }
 
 .store_contents {
-    width: 100%;
     display: flex;
     gap: 36px;
     justify-content: space-between;
