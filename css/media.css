@@ -1,16 +1,4 @@
 @media screen and (max-width: 1024px) {
-    .main_visual .swiper-slide {
-        height: 500px;
-    }
-
-    .main_visual .swiper-slide a p {
-        font-size: 42px;
-    }
-
-    .main_visual .swiper-slide a div {
-        font-size: 32px;
-    }
-
     .skincare {
         padding-top: 180px;
         padding-bottom: 90px;
@@ -95,23 +83,6 @@
 }
 
 @media screen and (max-width: 375px) {
-    .main_visual .swiper-slide a p {
-        font-size: 32px;
-        top: 77%;
-    }
-
-    .main_visual .swiper-slide a div {
-        font-size: 22px;
-    }
-
-    .main_visual .swiper-slide a p {
-        left: 20px;
-    }
-
-    .main_visual .swiper-slide a div {
-        left: 20px;
-    }
-
     .skincare {
         padding-top: 120px;
         padding-bottom: 60px;
