@@ -150,6 +150,10 @@ footer .logo img {
     border-radius: 0;
 }
 
+.logo img {
+    width: clamp(105px, 25vw, 183px);
+}
+
 img {
     object-fit: cover;
 }
@@ -157,7 +161,7 @@ img {
 /* h1은 로고임~ */
 
 h2 {
-    font-size: clamp(96px, 12vw, 240px);
+    font-size: clamp(200px, 12vw, 240px);
     font-family: var(--DM);
     color: var(--grey80);
 }
@@ -174,20 +178,20 @@ h2.right {
 
 
 h3 {
-    font-size: clamp(48px, 6vw, 90px);
+    font-size: clamp(50px, 6vw, 90px);
     font-family: var(--DM);
     font-style: italic;
 }
 
 h4 {
-    font-size: clamp(32px, 3.6vw, 55px);
+    font-size: clamp(30px, 3.6vw, 55px);
     font-family: var(--DM);
     font-style: italic;
 
 }
 
 h5 {
-    font-size: clamp(30px, 3.2vw, 50px);
+    font-size: clamp(25px, 3.2vw, 50px);
     font-weight: 600;
 }
 
@@ -202,7 +206,7 @@ h5 span {
 }
 
 h6 {
-    font-size: clamp(24px, 2.2vw, 36px);
+    font-size: clamp(18px, 2.2vw, 36px);
     font-weight: 500;
     line-height: 120%;
     /* 24px */
@@ -237,7 +241,7 @@ h6 {
 
 .tag {
     color: var(--gold90);
-    font-size: clamp(16px, 1.5vw, 24px);
+    font-size: clamp(14px, 1.5vw, 24px);
     font-weight: 600;
     line-height: 1.3;
     letter-spacing: -0.4px;
@@ -281,7 +285,7 @@ h6 {
 
 .name {
     font-weight: 400;
-    font-size: clamp(18px, 1.8vw, 28px);
+    font-size: clamp(16px, 1.8vw, 28px);
     letter-spacing: -0.56px;
     line-height: 1.3;
 }
@@ -370,7 +374,7 @@ h6 {
 }
 
 .h3_text a span {
-    font-size: clamp(28px, 3.5vw, 45px);
+    font-size: clamp(30px, 3.5vw, 45px);
 }
 
 .chat_bot {
@@ -691,12 +695,12 @@ nav .inner {
 
 .nav_top {
     width: 100%;
-    height: 50px;
+    height: clamp(32px, 6vw, 50px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* background: #ccc; */
-    font-size: 15px;
+    font-size: clamp(14px, 1.5vw, 15px);
     padding-top: 10px;
 }
 
@@ -737,7 +741,7 @@ nav .inner {
     height: 100%;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: clamp(6px, 1vw, 10px);
     cursor: pointer;
     position: relative;
     z-index: 20;
@@ -755,7 +759,7 @@ nav .inner {
 .sel ul {
     position: absolute;
     width: 100%;
-    height: 80px;
+    height: clamp(70px, 8vw, 80px);
     left: 0;
     top: 0;
     display: flex;
@@ -766,34 +770,36 @@ nav .inner {
     border: 1px solid var(--w-color);
     border-radius: 10px;
     align-items: center;
-    gap: 15px;
+    gap: clamp(8px, 1.5vw, 15px);
     transition: 0.6s;
     opacity: 0;
 }
 
 .sel.on ul {
     opacity: 1;
-    top: 50px;
+    top: clamp(40px, 5vw, 50px);
 }
 
 .login {
-    width: 126px;
+    width: clamp(90px, 14vw, 126px);
     height: 100%;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: clamp(8px, 1vw, 10px);
     align-items: center;
+    white-space: nowrap;
 }
 
 .login span {
-    font-size: 19px;
+    font-size: clamp(18px, 1vw, 19px);
     padding-bottom: 2.25px;
 }
 
 .nav_bottom {
-    height: 70px;
+    height: clamp(60px, 9vw, 70px);
     width: 100%;
     display: flex;
+    gap: clamp(8px, 1vw, 10px);
     justify-content: space-between;
     align-items: center;
 }
@@ -804,9 +810,11 @@ nav .inner {
 
 .nav_bottom ul.gnb {
     /* width: 764px; */
+    width: calc(100% - clamp(82px, 23.125vw, 350px) - clamp(8px, 1vw, 10px));
     height: 100%;
     display: flex;
-    font-size: 23px;
+    font-size: 	clamp(16px, 1.8vw, 23px);
+    /* white-space: nowrap; */
 }
 
 .nav_bottom ul.gnb>li {
@@ -814,6 +822,7 @@ nav .inner {
     padding-right: 65px; */
     height: 100%;
     display: flex;
+    flex: 1;
     position: relative;
 }
 
@@ -824,8 +833,6 @@ nav .inner {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 65px;
-    padding-right: 65px;
 }
 
 .nav_bottom ul.gnb>li::after {
@@ -912,7 +919,7 @@ nav .inner {
 
 .search {
     width: clamp(82px, 23.125vw, 350px);
-    height: 45px;
+    height: clamp(28px, 5vw, 45px);
     background: #2a2a2a;
     position: relative;
     display: flex;
@@ -920,7 +927,7 @@ nav .inner {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    padding: 0 20px;
+    padding: 0 clamp(14px, 3vw, 20px);
 }
 
 .search input {
@@ -945,7 +952,7 @@ nav .inner {
 }
 
 .search a span {
-    font-size: 30px;
+    font-size: clamp(27px, 4vw, 30px);
 }
 
 
