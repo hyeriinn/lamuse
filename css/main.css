@@ -8,7 +8,7 @@
 
 .main_visual .swiper-slide {
     width: 100%;
-    height: clamp(500px, 95vh, 909px);
+    height: clamp(500px, 60vw, 909px);
     /* background: yellow; */
 }
 
@@ -75,27 +75,25 @@
 
 /* skincare */
 .skincare {
-    padding-top: 387px;
-    padding-bottom: 150px;
+    padding-top: clamp(120px, 40vw, 387px);
+    padding-bottom: clamp(60px, 20vw, 150px);
     display: flex;
-    /* background: greenyellow; */
-    gap: 36px;
+    gap: var(--web-title-gap);
     align-items: flex-end;
 }
 
 .skincare_left {
     width: 629px;
-    height: 963px;
-    /* 임시임 */
-    /* background: rgb(188, 188, 188); */
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 120%;
-    /* 57.6px */
-    letter-spacing: -0.96px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.skincare_left img {
+    width: 100%;
+    display: block;
 }
 
 .skincare_left a {
@@ -103,7 +101,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* background: #ccc; */
     gap: 20px;
 }
 
@@ -111,25 +108,26 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    font-size: clamp(32px, 3vw, 48px);
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.96px;
 }
 
 
 .skincare .swiper {
-    width: 1027px;
-    height: 682px;
+    width: clamp(320px, 80vw, 1027px);
+    height: auto;
     /* 부모의 고정 너비 */
-    /* background: green; */
     overflow: hidden;
-    /* 스크롤 안 보이게 */
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    margin-bottom: 25px;
+    gap: clamp(12px, 3vw, 35px);
 }
 
 .skincare .swiper .h3_text {
     width: 50%;
-    height: 100px;
+    height: clamp(60px, 10vh, 100px);
     /* 또는 flex: 0 0 auto; */
     /* background: rgb(255, 106, 106); */
 }
@@ -137,19 +135,21 @@
 .skincare .swiper-wrapper {
     display: flex;
     /* 슬라이드 가로 정렬 */
-    height: 490px;
+    /* height: clamp(300px, 60vh, 490px); */
+    height: auto;
     /* align-items: flex-end; */
 
 }
 
 .skincare .swiper-slide {
-    width: 325px;
+    width: clamp(240px, 40vw, 325px);
     /* 슬라이드 고정 너비 */
     flex-shrink: 0;
     /* 줄어들지 않게 */
-    height: 490px;
+    /* height: 490px; */
+    height: auto;
     /* background: #d5d5d5; */
-    font-size: 24px;
+    font-size: clamp(18px, 2vw, 24px);
 }
 
 .skincare .swiper-slide a {
@@ -157,19 +157,20 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: clamp(10px, 2vw, 15px);
     justify-content: space-between;
     align-items: flex-start;
     opacity: .8;
     transition: .3s;
-    font-size: 30px;
+    font-size: clamp(20px, 3vw, 30px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
 .skincare .swiper-slide a img {
-    width: 325px;
+    width: 100%;
+    display: block;
 }
 
 .skincare .swiper-slide:hover a {

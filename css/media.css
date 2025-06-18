@@ -1,16 +1,4 @@
 @media screen and (max-width: 1024px) {
-    .skincare {
-        padding-top: 180px;
-        padding-bottom: 90px;
-    }
-
-    .skincare .swiper {
-        width: 100%;
-        height: 798px;
-        gap: 109px;
-        margin-bottom: 0;
-    }
-
     .skincare .swiper .h3_text {
         width: 100%;
     }
@@ -83,37 +71,12 @@
 }
 
 @media screen and (max-width: 375px) {
-    .skincare {
-        padding-top: 120px;
-        padding-bottom: 60px;
-    }
-
-    .skincare .swiper {
-        height: 600px;
-        display: flex;
-        gap: 60px;
-    }
-
     .skincare .swiper .h3_text {
         height: 55px;
     }
 
-    .skincare .swiper-slide {
-        width: 300px;
-    }
-
     .skincare .swiper-slide a {
-        font-size: 24px;
-        gap: 14px;
         justify-content: flex-start;
-    }
-
-    .skincare .swiper-slide a .tag {
-        font-size: 16px;
-    }
-
-    .skincare .swiper-slide a img {
-        width: 300px;
     }
 
     /* makeup */
