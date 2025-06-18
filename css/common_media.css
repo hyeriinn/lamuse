@@ -149,9 +149,9 @@
 
     .fix .us {
         display: flex;
-        position: absolute;
-        left: 5%;
-        bottom: 11%;
+        /* position: absolute; */
+        padding-left: 5%;
+        padding-top: 11%;
         transform: translateY(100px);
         transition: 1s;
     }
