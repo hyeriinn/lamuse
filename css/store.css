@@ -55,47 +55,54 @@
 }
 
 .store_filter {
-    width: 376px;
+    width: 30%;
     height: 860px;
     /* background: #ccc; */
     border-left: 1px solid var(--w-color);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    margin: 8px;
 }
 
 .cosmetic_list {
     display: none;
+
 }
-.filter_list ul{
+
+.filter_list ul {
     display: none;
 }
 
-.filter_list .store_filter_js{
+.filter_list .store_filter_js {
     display: block;
 }
 
 .store_filter_js {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s linear;
-  padding: 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s linear;
+    padding: 0 0;
 }
 
 .store_filter_js.open {
-  max-height: 500px; /* 충분히 큰 값 */
-  padding: 10px 0;
+    max-height: 500px;
+    /* 충분히 큰 값 */
+    padding: 10px 0;
 }
 
 .store_filter_head .material-symbols-outlined {
-  transition: transform 0.3s ease;
-  transform: rotate(180deg); /* 초기 상태는 180도 회전 */
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+    /* 초기 상태는 180도 회전 */
 }
 
 .store_filter_head.active .material-symbols-outlined {
-  transform: rotate(0deg); /* 열릴 때 정방향 */
+    transform: rotate(0deg);
+    /* 열릴 때 정방향 */
 }
 
-.store_filter .filter_list .store_filter_head{
+.store_filter .filter_list .store_filter_head {
     font-size: 28px;
     font-weight: 600;
     padding: 15px 20px;
@@ -105,16 +112,17 @@
     cursor: pointer;
 }
 
-.filter_list ul li:hover{
+.filter_list ul li:hover {
     background: var(--grey90);
 }
+
 .store_filter .filter_list .store_filter_head>h6 {
     font-size: 28px;
 }
 
 
 .store_filter .filter_list .store_filter_head>span {
-   font-size: 48px;
+    font-size: 48px;
 }
 
 
@@ -137,7 +145,7 @@
     padding: 8px 20px;
 }
 
-.custom_checkbox:hover{
+.custom_checkbox:hover {
     font-weight: 500;
 }
 
@@ -187,12 +195,16 @@
     display: flex;
     column-gap: 24px;
     row-gap: 10px;
+    justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
 }
 
 .store_contents article ul li {
-    width: 365px;
-    height: 394px;
+    /*  width: 365px;
+    height: 394px; */
+    flex: 0 0 30%;
+    height: auto;
 }
 
 .store_contents article ul li a {
@@ -202,7 +214,7 @@
 
 .store_contents article ul li a .store_product_img {
     width: 100%;
-    height: 288px;
+    /* height: 288px; */
     overflow: hidden;
     border-radius: 10px;
 }
@@ -220,8 +232,8 @@
 
 .store_contents article ul li a .store_product_txt {
     width: 100%;
-    padding: 24px 20px;
-    font-size: 20px;
+    padding: clamp(16px, 3vw, 24px) clamp(8px, 2.5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
 
 }
 

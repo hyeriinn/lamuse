@@ -6,6 +6,7 @@
 width: 100%;
 display: flex;
 justify-content: space-between;
+gap: 24px;
 }
 
 .store_sub_detail_img{
