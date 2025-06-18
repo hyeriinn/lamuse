@@ -45,23 +45,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     new Swiper('.store_top', {
-      loop: shouldLoop('.store_top', 5),
+      loop: true,
       autoplay: {
         delay: 1000,
       },
-      slidesPerView: 5,
+      slidesPerView: "auto",
       spaceBetween: 36,
       speed: 2000,
     });
 
     new Swiper('.store_bottom', {
-      loop: shouldLoop('.store_bottom', 5),
+      loop: true,
       autoplay: {
         delay: 1000,
         reverseDirection: true,
       },
       speed: 2000,
-      slidesPerView: 5,
+      slidesPerView: "auto",
       spaceBetween: 36,
     });
   });
@@ -86,6 +86,10 @@ document.addEventListener("DOMContentLoaded", function () {
     observer6.observe(item);
   });
 
-  // 심플리 스크롤 적용
-  applySimplyScroll('.interaction .txtAniBox');
+  window.addEventListener('load', () => {
+    Marquee3k.init();
+    // 이미지가 많거나 lazy-loading이 있다면 refresh 추가
+    // Marquee3k.refreshAll();
+  });
 });
+

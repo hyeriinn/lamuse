@@ -345,7 +345,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: clamp(22px, 1.3vw, 35px);
+    font-size: clamp(18px, 1.3vw, 30px);
     font-style: normal;
     line-height: 110%;
     /* 38.5px */
@@ -378,7 +378,7 @@
 /* store */
 .store {
     width: 100%;
-    padding: 150px 0;
+    padding: var(--padding) 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -408,57 +408,31 @@
     align-items: flex-end;
 }
 
-.store_slide .swiper-wrapper img {
-    border-radius: 10px;
+.store_slide .swiper-slide {
+    width: clamp(240px, 40vh, 356px);
+}
+
+.store_slide img {
+    height: clamp(250px, 45vh, 450px);
 }
 
 
 /* interaction */
-.simply-scroll {
-    width: 100%;
-}
-
-.simply-scroll .simply-scroll-clip {
+.marquee3k {
     overflow: hidden;
-}
-
-.simply-scroll .simply-scroll-list {
-    display: flex;
-}
-
-.interaction {
+    white-space: nowrap;
     width: 100%;
-    height: 91px;
     color: var(--w-color);
 }
 
-.interaction .txtAniBox {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.interaction .txtAniBox .simply-scroll-container {
-    display: flex;
-    width: 100%;
-}
-
-.interaction .txtAniBox .simply-scroll .simply-scroll-clip {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
-
-.interaction .txtAniBox .txtAni {
-    display: flex;
-    align-items: center;
+.marquee3k div {
+    display: inline-block;
     white-space: nowrap;
-    transform-origin: left top;
-    background: var(--main-font);
-    height: 91px;
+    will-change: transform;
 }
 
-.interaction .txtAniBox .txtAni li {
-    margin-right: 30px;
+.marquee3k div span {
+    display: inline-block;
+    margin-right: 0.5vw;
     font-size: clamp(24px, 3vw, 36px);
 }
