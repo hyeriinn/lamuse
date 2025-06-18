@@ -163,6 +163,9 @@ img {
 
 h2 {
     font-size: clamp(200px, 12vw, 240px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
     font-family: var(--DM);
     color: var(--grey80);
 }
@@ -342,7 +345,7 @@ h6 {
 }
 
 .button_subs {
-    width: clamp(180px, 25vw, 281px);
+    width: clamp(140px, 25vw, 281px);
     height: clamp(40px, 6vw, 58px);
     font-size: clamp(20px, 2.5vw, 30px);
     border-radius: 10px;
@@ -363,7 +366,7 @@ h6 {
 }
 
 .inner {
-    width: clamp(343px, 90vw, 1570px);
+    width: clamp(343px, 87vw, 1570px);
     /* 모바일 343px, 웹 1570px 사이 동적 조정 */
     margin: 0 auto;
 }
@@ -588,25 +591,25 @@ aside.up a {
 }
 
 .fix .gnb {
-    width: auto;
+    width: 100%;
     background: var(--footer);
     display: flex;
     /* gnb의 자식이 ul 하나뿐이니까 가운데정렬하려고 플렉스 적용 */
     justify-content: center;
     align-items: flex-start;
-    padding-top: 61px;
+    padding-top: clamp(36px, 6vw, 61px);
 }
 
 .fix .gnb>ul {
-    width: 80%;
+    width: 90%;
     height: 100%;
     flex-direction: column;
     display: flex;
-    gap: 20px;
+    gap: clamp(12px, 3vw, 20px);
 }
 
 .fix .gnb>ul>li {
-    width: 807px;
+    
     height: 20%;
     /* background: yellow; */
     align-content: center;
@@ -628,13 +631,14 @@ aside.up a {
 .fix .gnb>ul>li>a {
     /* background: red; */
     display: flex;
-    width: 28%;
-    font-size: 48px;
+    width: 20%;
+    font-size: clamp(32px, 5vw, 48px);
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .fix .gnb>ul>li>ul.sub {
-    font-size: 24px;
+    font-size: clamp(18px, 2.5vw, 24px);
     font-weight: 300;
     display: flex;
     width: 100%;
@@ -666,8 +670,8 @@ aside.up a {
 }
 
 .fix .us li {
-    height: 29px;
-    font-size: 16px;
+    height: clamp(20px, 4vw, 29px);
+    font-size: clamp(14px, 1.2vw, 16px);
 }
 
 .fix .sns {

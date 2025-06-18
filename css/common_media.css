@@ -1,8 +1,4 @@
 @media screen and (max-width: 1024px) {
-    img {
-        object-fit: cover;
-    }
-
     .button_subs {
         width: 281px;
         height: 53px;
@@ -11,10 +7,6 @@
 
     h2 {
         font-size: 210px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 120%;
-        /* 252px */
     }
 
     /*     h4 {
@@ -291,9 +283,5 @@
 
     footer .f_middle img {
         width: 162px;
-    }
-
-    footer .copy {
-        padding: 20px 0;
     }
 }
